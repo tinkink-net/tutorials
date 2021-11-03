@@ -24,4 +24,7 @@ module.exports = {
         ],
         sidebar: genSidebar(),
     },
+    plugins: [
+        ['@vuepress/plugin-google-analytics', { id: 'G-82JX9NZ3NN' }],
+    ],
 }
