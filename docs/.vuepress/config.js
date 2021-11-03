@@ -20,7 +20,7 @@ module.exports = {
         navbar: [
             { text: '首页', link: '/' },
             // { text: '教程', link: '/nginx' },
-            { text: 'GitHub', link: 'https://github.com/maiyatang/tutorial' },
+            { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
         ],
         sidebar: genSidebar(),
     },
