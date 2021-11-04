@@ -20,9 +20,15 @@ module.exports = {
         navbar: [
             { text: '首页', link: '/' },
             // { text: '教程', link: '/nginx' },
-            { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
+            // { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
         ],
         sidebar: genSidebar(),
+        repo: 'maiyatang2021/tutorials',
+        repoLabel: 'Github',
+        docsBranch: 'master',
+        docsDir: 'docs',
+        contributors: false,
+        editLinkText: '协助改进本篇教程',
     },
     plugins: [
         ['@vuepress/plugin-google-analytics', { id: 'G-82JX9NZ3NN' }],
