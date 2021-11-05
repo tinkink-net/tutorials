@@ -28,9 +28,9 @@ CREATE DATABASE db_name;
 -- 仅当目标数据库不存在时创建
 CREATE DATABASE IF NOT EXISTS db_name;
 -- 创建数据库，并设置字符集
-CREATE DATABASE db_name DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE db_name DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 -- 仅当目标数据库不存在时创建，并设置字符集
-CREATE DATABASE IF NOT EXISTS db_name DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS db_name DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
 
 ## 删除数据库
@@ -61,7 +61,8 @@ SHOW TABLES;
 - 自增 `AUTO_INCREMENT`
 - 主键 `PRIMARY KEY`
 - 备注 `COMMENT '备注'`
-- 编码字符集 `COLLATE`
+- 编码字符集 `CHARACTER SET utf8mb4`
+- 排序方法 `COLLATE utf8mb4_general_ci`
 
 写字段时先写字段名，再写字段属性。
 
