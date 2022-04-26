@@ -1,3 +1,4 @@
+const { viteBundler, defaultTheme } = require('vuepress');
 const genSidebar = require('./genSidebar');
 
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
         // ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
     dest: 'public',
-    themeConfig: {
+    theme: defaultTheme({
         logo: '/assets/logo.png',
         navbar: [
             { text: '首页', link: '/' },
@@ -29,8 +30,9 @@ module.exports = {
         docsDir: 'docs',
         contributors: false,
         editLinkText: '协助改进本篇教程',
-    },
+    }),
     plugins: [
         ['@vuepress/plugin-google-analytics', { id: 'G-82JX9NZ3NN' }],
     ],
+    bundler: viteBundler(),
 }
