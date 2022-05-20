@@ -30,7 +30,7 @@ module.exports = function () {
         ret.push(group);
     });
 
-    console.log(ret);
+    // console.log(ret);
 
     return ret;
 };
