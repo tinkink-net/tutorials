@@ -1,4 +1,5 @@
 const { viteBundler, defaultTheme } = require('vuepress');
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics');
 const genSidebar = require('./genSidebar');
 
 module.exports = {
@@ -32,7 +33,7 @@ module.exports = {
         editLinkText: '协助改进本篇教程',
     }),
     plugins: [
-        ['@vuepress/plugin-google-analytics', { id: 'G-82JX9NZ3NN' }],
+        [googleAnalyticsPlugin({ id: 'G-82JX9NZ3NN' })],
     ],
     bundler: viteBundler(),
 }
