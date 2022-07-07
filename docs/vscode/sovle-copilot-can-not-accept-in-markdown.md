@@ -12,7 +12,7 @@ Copilot 除了能实例代码以外，也能补充文本，而且包括中文文
 
 ## 原因
 
-安装了插件 Markdown All In One (<https://marketplace.visualstudio.com/items?itemName=markdown-all-in-one.markdown-all-in-one>)，快捷键有冲突。
+安装了插件 Markdown All In One (<https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one>)，快捷键有冲突。
 
 ## 解决方案
 
