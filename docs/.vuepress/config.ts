@@ -1,8 +1,9 @@
-const { viteBundler, defaultTheme } = require('vuepress');
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics');
-const genSidebar = require('./genSidebar');
+import { viteBundler, defaultTheme } from 'vuepress';
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
+import genSidebar from './genSidebar';
 
 module.exports = {
+    title: 'Tutorials | Tinkink',
     locales: {
         '/zh-hans/': {
             lang: 'zh-CN',
@@ -11,7 +12,7 @@ module.exports = {
         },
         '/en/': {
             lang: 'en',
-            title: 'Tutorial | Tinkink',
+            title: 'Tutorials | Tinkink',
             description: 'Tutorials of common development tools',
         },
     },
@@ -36,15 +37,18 @@ module.exports = {
                     // { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
                 ],
                 editLinkText: '协助改进本篇教程',
+                selectLanguageName: '简体中文',
+                sidebar: genSidebar('zh-hans'),
             },
             '/en/': {
                 navbar: [
                     { text: 'Home', link: '/' },
                 ],
                 editLinkText: 'Help improve this article',
+                selectLanguageName: 'English',
+                sidebar: genSidebar('en'),
             },
         },
-        sidebar: genSidebar(),
         repo: 'tinkink-co/tutorials',
         repoLabel: 'Github',
         docsBranch: 'master',

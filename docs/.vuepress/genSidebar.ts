@@ -1,12 +1,12 @@
-const path = require('path');
-const fs = require('fs');
+import path from 'path';
+import fs from 'fs';
 
-module.exports = function () {
+export default function (subPath: string = '') {
 
-    const docPath = path.resolve(__dirname, '../');
+    const docPath = path.resolve(__dirname, '../', subPath);
     const folders = fs.readdirSync(docPath);
 
-    const ret = [];
+    const ret = [] as any[];
 
     if (folders.indexOf('README.md') > -1) {
         // ret.push('/');
@@ -22,15 +22,15 @@ module.exports = function () {
         const group = {
             text: folder.replace(/^\d+\./, ''),
             collapsable: false,
-            children: [],
+            children: [] as string[],
         };
         group.children = mdFiles.filter((mdFile) => mdFile !== 'README.md').map((mdFile) => {
-            return '/' + folder + '/' + mdFile;
+            return '/' + subPath + '/' + folder + '/' + mdFile;
         });
         ret.push(group);
     });
 
-    // console.log(ret);
+    console.log(ret);
 
     return ret;
 };
