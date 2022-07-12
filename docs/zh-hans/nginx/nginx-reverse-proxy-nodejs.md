@@ -16,15 +16,15 @@ http {
 }
 ```
 
-此时就可以为 Node.js 站点设置独立的配置文件，比如 `/etc/nginx/conf.d/maiyatang.co.conf`，其中包含如下内容：
+此时就可以为 Node.js 站点设置独立的配置文件，比如 `/etc/nginx/conf.d/tinkink.net.conf`，其中包含如下内容：
 
 ```
 server {
     listen       80 ;
-    server_name  maiyatang.co;
+    server_name  tinkink.net;
 
-    error_log    /var/log/nginx/maiayatang_error.log;
-    access_log    /var/log/nginx/maiayatang_accss.log;
+    error_log    /var/log/nginx/tinkink_error.log;
+    access_log    /var/log/nginx/tinkink_accss.log;
 
     location / {
         proxy_set_header X-Real-IP $remote_addr;
@@ -48,10 +48,10 @@ server {
 server {
     listen       80 ;
     listen      443 ssl;
-    server_name  maiyatang.co;
+    server_name  tinkink.net;
 
-    https_certificate /etc/nginx/ssl/maiyatang.co.crt;
-    https_certificate_key /etc/nginx/ssl/maiyatang.co.key;
+    https_certificate /etc/nginx/ssl/tinkink.net.crt;
+    https_certificate_key /etc/nginx/ssl/tinkink.net.key;
 
     # ...
 }
