@@ -3,9 +3,18 @@ const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics');
 const genSidebar = require('./genSidebar');
 
 module.exports = {
-    lang: 'zh-CN',
-    title: '教程 | 麦芽糖',
-    description: '常用开发工具教程',
+    locales: {
+        '/zh-hans/': {
+            lang: 'zh-CN',
+            title: '教程 | Tinkink',
+            description: '常用开发工具教程',
+        },
+        '/en/': {
+            lang: 'en',
+            title: 'Tutorial | Tinkink',
+            description: 'Tutorials of common development tools',
+        },
+    },
     head: [
         ['link', { rel: 'icon', href: '/assets/logo.png' }],
         // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -19,18 +28,28 @@ module.exports = {
     dest: 'public',
     theme: defaultTheme({
         logo: '/assets/logo.png',
-        navbar: [
-            { text: '首页', link: '/' },
-            // { text: '教程', link: '/nginx' },
-            // { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
-        ],
+        locales: {
+            '/zh-hans/': {
+                navbar: [
+                    { text: '首页', link: '/' },
+                    // { text: '教程', link: '/nginx' },
+                    // { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
+                ],
+                editLinkText: '协助改进本篇教程',
+            },
+            '/en/': {
+                navbar: [
+                    { text: 'Home', link: '/' },
+                ],
+                editLinkText: 'Help improve this article',
+            },
+        },
         sidebar: genSidebar(),
-        repo: 'maiyatang2021/tutorials',
+        repo: 'tinkink-co/tutorials',
         repoLabel: 'Github',
         docsBranch: 'master',
         docsDir: 'docs',
         contributors: false,
-        editLinkText: '协助改进本篇教程',
     }),
     plugins: [
         [googleAnalyticsPlugin({ id: 'G-82JX9NZ3NN' })],
