@@ -4,16 +4,17 @@ import genSidebar from './genSidebar';
 
 module.exports = {
     title: 'Tutorials | Tinkink',
+    url: 'https://tutorials.tinkink.net',
     locales: {
-        '/zh-hans/': {
-            lang: 'zh-CN',
-            title: '教程 | Tinkink',
-            description: '常用开发工具教程',
-        },
         '/en/': {
             lang: 'en',
             title: 'Tutorials | Tinkink',
             description: 'Tutorials of common development tools',
+        },
+        '/zh-hans/': {
+            lang: 'zh-CN',
+            title: '教程 | Tinkink',
+            description: '常用开发工具教程',
         },
     },
     head: [

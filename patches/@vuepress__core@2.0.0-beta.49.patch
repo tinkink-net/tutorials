@@ -1,0 +1,51 @@
+diff --git a/lib/app/resolveAppOptions.d.ts b/lib/app/resolveAppOptions.d.ts
+index 91af4fac005ddd75e6038305ea218b702be4ba24..6f262c98e805865a4ea8600f70af8afaf207a80f 100644
+--- a/lib/app/resolveAppOptions.d.ts
++++ b/lib/app/resolveAppOptions.d.ts
+@@ -2,4 +2,4 @@ import type { AppConfig, AppOptions } from '../types';
+ /**
+  * Create app options with default values
+  */
+-export declare const resolveAppOptions: ({ base, lang, title, description, head, locales, source, dest, temp, cache, public: publicDir, host, port, open, templateDev, shouldPreload, shouldPrefetch, templateBuild, bundler, debug, markdown, pagePatterns, permalinkPattern, plugins, theme, }: AppConfig) => AppOptions;
++export declare const resolveAppOptions: ({ base, url, lang, title, description, head, locales, source, dest, temp, cache, public: publicDir, host, port, open, templateDev, shouldPreload, shouldPrefetch, templateBuild, bundler, debug, markdown, pagePatterns, permalinkPattern, plugins, theme, }: AppConfig) => AppOptions;
+diff --git a/lib/app/resolveAppOptions.js b/lib/app/resolveAppOptions.js
+index 0c55aa7723b04ef01cb4bd9f7b5bc93e4393c416..c1f471d91fa403470b9d071914a55e34db9c55d3 100644
+--- a/lib/app/resolveAppOptions.js
++++ b/lib/app/resolveAppOptions.js
+@@ -5,18 +5,19 @@ const utils_1 = require("@vuepress/utils");
+ /**
+  * Create app options with default values
+  */
+-const resolveAppOptions = ({ 
++const resolveAppOptions = ({
+ // site config
+-base = '/', lang = 'en-US', title = '', description = '', head = [], locales = {}, 
++base = '/', url = '', lang = 'en-US', title = '', description = '', head = [], locales = {},
+ // directory config
+-source, dest = utils_1.path.resolve(source, '.vuepress/dist'), temp = utils_1.path.resolve(source, '.vuepress/.temp'), cache = utils_1.path.resolve(source, '.vuepress/.cache'), public: publicDir = utils_1.path.resolve(source, '.vuepress/public'), 
++source, dest = utils_1.path.resolve(source, '.vuepress/dist'), temp = utils_1.path.resolve(source, '.vuepress/.temp'), cache = utils_1.path.resolve(source, '.vuepress/.cache'), public: publicDir = utils_1.path.resolve(source, '.vuepress/public'),
+ // dev config
+-host = '0.0.0.0', port = 8080, open = false, templateDev = utils_1.path.normalize(require.resolve('@vuepress/client/templates/dev.html')), 
++host = '0.0.0.0', port = 8080, open = false, templateDev = utils_1.path.normalize(require.resolve('@vuepress/client/templates/dev.html')),
+ // build config
+-shouldPreload = true, shouldPrefetch = true, templateBuild = utils_1.path.normalize(require.resolve('@vuepress/client/templates/build.html')), 
++shouldPreload = true, shouldPrefetch = true, templateBuild = utils_1.path.normalize(require.resolve('@vuepress/client/templates/build.html')),
+ // common config
+ bundler, debug = false, markdown = {}, pagePatterns = ['**/*.md', '!.vuepress', '!node_modules'], permalinkPattern = null, plugins = [], theme, }) => ({
+     base,
++    url,
+     lang,
+     title,
+     description,
+diff --git a/lib/app/resolveAppSiteData.js b/lib/app/resolveAppSiteData.js
+index 9bf15022482a4b06879e85b89aff39f26c944d19..4e13e541d01020d935c4d8ff69a6d789c6614cb3 100644
+--- a/lib/app/resolveAppSiteData.js
++++ b/lib/app/resolveAppSiteData.js
+@@ -7,6 +7,7 @@ exports.resolveAppSiteData = void 0;
+  * Site data will also be used in client
+  */
+ const resolveAppSiteData = (options) => ({
++    url: options.url,
+     base: options.base,
+     lang: options.lang,
+     title: options.title,

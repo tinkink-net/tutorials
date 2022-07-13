@@ -1,0 +1,80 @@
+diff --git a/dist/app.js b/dist/app.js
+index 32d21270b67901029f106cc05af8629174ed0d44..020d4fe45d87ad1301901603be1213a7b049eccc 100644
+--- a/dist/app.js
++++ b/dist/app.js
+@@ -116,7 +116,8 @@ var setupGlobalComputed = (app, router) => {
+   const siteLocaleData = computed(() => resolvers.resolveSiteLocaleData(siteData.value, routeLocale.value));
+   const pageFrontmatter = computed(() => resolvers.resolvePageFrontmatter(pageData.value));
+   const pageHeadTitle = computed(() => resolvers.resolvePageHeadTitle(pageData.value, siteLocaleData.value));
+-  const pageHead = computed(() => resolvers.resolvePageHead(pageHeadTitle.value, pageFrontmatter.value, siteLocaleData.value));
++  const alternateHead = computed(() => resolvers.resolveAlternateHead(siteData.value, router.currentRoute.value.path, routeLocale.value));
++  const pageHead = computed(() => resolvers.resolvePageHead(pageHeadTitle.value, pageFrontmatter.value, siteLocaleData.value, alternateHead.value));
+   const pageLang = computed(() => resolvers.resolvePageLang(pageData.value));
+   app.provide(routeLocaleSymbol, routeLocale);
+   app.provide(siteLocaleDataSymbol, siteLocaleData);
+diff --git a/dist/chunk-OOQFWU6B.js b/dist/chunk-OOQFWU6B.js
+index 314288348c4aeedbbd3b474e5936f90755e72470..254397959790b93fbfe41a2182e6926f48838c58 100644
+--- a/dist/chunk-OOQFWU6B.js
++++ b/dist/chunk-OOQFWU6B.js
+@@ -129,13 +129,14 @@ var resolvers = reactive({
+     return pageData2 ?? pageDataEmpty;
+   },
+   resolvePageFrontmatter: (pageData2) => pageData2.frontmatter,
+-  resolvePageHead: (headTitle, frontmatter, siteLocale) => {
++  resolvePageHead: (headTitle, frontmatter, siteLocale, alternate) => {
+     const description = isString(frontmatter.description) ? frontmatter.description : siteLocale.description;
+     const head = [
+       ...isArray(frontmatter.head) ? frontmatter.head : [],
+       ...siteLocale.head,
+       ["title", {}, headTitle],
+-      ["meta", { name: "description", content: description }]
++      ["meta", { name: "description", content: description }],
++      ...alternate,
+     ];
+     return dedupeHead(head);
+   },
+@@ -145,7 +146,43 @@ var resolvers = reactive({
+   resolveSiteLocaleData: (site, routeLocale) => ({
+     ...site,
+     ...site.locales[routeLocale]
+-  })
++  }),
++  resolveAlternateHead: (
++    siteData,
++    routePath,
++    routeLocale
++  ) => {
++    const { url, locales } = siteData;
++    const alternate = [];
++    const localeKeys = Object.keys(locales);
++    if (localeKeys.length <= 1) {
++      return alternate;
++    }
++    for (const localeKey in locales) {
++      const localeValue = locales[localeKey];
++      alternate.push([
++        'link',
++        {
++          rel: 'alternate',
++          href: `${url || ''}${routePath.replace(routeLocale, localeKey)}`,
++          hreflang: localeValue.lang,
++        },
++      ]);
++    }
++
++    const defaultLocaleKey = localeKeys[0];
++    const defaultLocale = locales[defaultLocaleKey];
++    alternate.push([
++      'link',
++      {
++        rel: 'alternate',
++        href: `${url || ''}${routePath.replace(routeLocale, defaultLocaleKey)}`,
++        hreflang: 'x-default',
++      }
++    ]);
++
++    return alternate;
++  },
+ });
+ 
+ // src/components/ClientOnly.ts

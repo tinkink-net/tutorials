@@ -39,4 +39,4 @@ Copilot 也提供了一些快捷键，可以很方便地使用。
 - 上一条建议：`Alt/Option + [`
 - 触发行内Copilot：`Alt/Option + \` （Coplit还没有给出建议或者建议被拒绝了，希望手工触发它提供建议）
 
-![状态图标](/attachments/vscode/copilot-usage-and-shortcut/06.shortcut.jpg)
+![快捷键截图](/attachments/vscode/copilot-usage-and-shortcut/06.shortcut.jpg)
