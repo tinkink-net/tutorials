@@ -30,7 +30,7 @@ export default function (subPath: string = '') {
         ret.push(group);
     });
 
-    console.log(ret);
+    // console.log(ret);
 
     return ret;
 };

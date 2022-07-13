@@ -25,11 +25,7 @@ This command actually writes two configuration items to the global configuration
 
 If we don't run the command with `--global` option, the configuration file will be written to the current directory, usually located at `.git/config`.
 
-## 不同项目使用不同的配置项
-
 ## Use different config in different projects
-
-当我们需要以不同的身份参与到不同的项目中时，就需要在各个项目中使用不同的配置项。按上方描述，我们可以在项目配置中写入单独的配置，但是因为需要针对每个项目进行配置，而且一旦项目没有配置时就会使用全局配置，这可能不是我们期望的结果。因此我们需要有一种更好的机制。
 
 When we want to participate in projects with different identities, we need to use different configuration in each project. But we don't want to write separate configuration in each project, because we had to use the global configuration if the project doesn't have a configuration. So we need a better way.
 
@@ -91,8 +87,6 @@ First, we need to create a new public key. If we have a public key already, we c
 cd ~/.ssh
 ssh-keygen -t rsa
 ```
-
-注意文件名不要使用默认的`id_rsa`，否则会和已有的公钥冲突。
 
 Please note the file name, can not be the default `id_rsa` name, otherwise it will conflict with the existing public key.
 
