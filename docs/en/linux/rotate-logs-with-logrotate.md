@@ -1,4 +1,4 @@
-## Linux log rolling cut with logratate
+# Linux log rolling cut with logratate
 
 ## Introduction to Log Rollup
 

@@ -1,4 +1,4 @@
-## How to compress and uncompress files in a Linux environment
+# How to compress and uncompress files in a Linux environment
 
 ## The difference between packing and compression
 
@@ -68,14 +68,14 @@ tar -jxvf archive.tar.bz2
 
 ### gzip compression
 
-The ``gzip`` command is used to compress a file. It is worth noting that it overwrites the original file, i.e. the original file disappears after being compressed with the ``gzip`` command.
+The `gzip` command is used to compress a file. It is worth noting that it overwrites the original file, i.e. the original file disappears after being compressed with the `gzip` command.
 
 ```sh
 ## file will disappear and a new file.gz will be created
 gzip file
 ```
 
-Applying `gzip` directly to a directory has no effect, because `gzip` can only compress files, not directories. However, all files in a directory can be compressed recursively using the `-r` argument: ``
+Applying `gzip` directly to a directory has no effect, because `gzip` can only compress files, not directories. However, all files in a directory can be compressed recursively using the `-r` argument:
 
 ```sh
 # All the files in the dirname directory are compressed, each file generates a corresponding .gz file, and the original file disappears

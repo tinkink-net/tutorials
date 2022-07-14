@@ -1,4 +1,4 @@
-## Enable Google Authenticator for two-factor authentication (2FA / MFA) in CentOS 7
+# Enable Google Authenticator for two-factor authentication (2FA / MFA) in CentOS 7
 
 ## Two-factor authentication
 

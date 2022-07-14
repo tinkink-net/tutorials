@@ -1,4 +1,4 @@
-## How to view Linux disk space usage
+# How to view Linux disk space usage
 
 ## Viewing the space occupation of a disk partition
 
