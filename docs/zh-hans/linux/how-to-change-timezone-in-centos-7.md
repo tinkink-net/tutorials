@@ -35,7 +35,6 @@ ls -l /etc/localtime
 
 ```
 lrwxrwxrwx. 1 root root 29 Dec 11 09:25 /etc/localtime -> ../usr/share/zoneinfo/Etc/UTC
-Copy
 ```
 
 同样可以看到目前使用的是UTC时区。
