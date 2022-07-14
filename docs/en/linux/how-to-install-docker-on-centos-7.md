@@ -1,49 +1,49 @@
-# 如何在 CentOS 7 上安装 Docker
+# How to install Docker on CentOS 7
 
-## 安装 yum-utils 并添加源
+## Install yum-utils and add sources
 
-为了安装 Docker，我们需要首先安装`yum-utils`，以便添加 Docker 的源。
+In order to install Docker, we need to first install `yum-utils` in order to add Docker's sources.
 
 ```sh
 yum install -y yum-utils
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-## 安装 Docker
+## Install Docker
 
-直接使用`yum`命令即可安装 Docker。
+Install Docker directly with the ``yum`` command.
 
 ```sh
 yum install docker-ce docker-ce-cli containerd.io
 ```
 
-## 运行并设置自启动
+## Run and set autostart
 
-Docker 安装完之后不会自动运行，需要手动运行：
+Docker will not run automatically after installation, you need to run it manually: ``sh install docker-ce docker-ce-cli.
 
 ```sh
-systemctl start docker
+systemctl to start docker
 ```
 
-可使用`docker ps`命令查看 Docker 运行状态，如看到输出正在运行的窗口列表，则启动成功：
+You can use the ``docker ps`` command to check the running status of Docker. If you see the list of running windows output, then the startup is successful.
 
 ```
-CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+The container ID image command creates the status port name
 ```
 
-为了让 Docker 在每次重启系统的时候能自动运行，还需要设置自启动：
+In order for Docker to run automatically every time you reboot your system, you also need to set up a self-start: ``sh
 
 ```sh
 systemctl enable docker
 ```
 
-至此就大功告成了。可以使用`hello-world`镜像验证一下：
+This is all done. You can verify this with the `hello-world` image: ``sh systemctl enable docker
 
 ```sh
 docker run hello-world
 ```
 
-看到以下输出即为成功：
+You will be successful if you see the following output.
 
 ```sh
 Unable to find image 'hello-world:latest' locally
