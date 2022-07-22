@@ -1,3 +1,3 @@
-# 首页
+# Home
 
-这里收录常用开发软件的使用教程，尽量保证及时、准确。
+We provide a collection of useful tutorials for developers, and will try to keep them up-to-date.
