@@ -182,7 +182,7 @@ SELECT user, host FROM mysql.user;
 ## 修改用户密码
 
 ```sql
-SET PASSWORD FOR 'user'@'%' = PASSWORD('new_password');
+ALTER USER 'user'@'%' IDENTIFIED BY 'new_password';
 ```
 
 ## 删除用户

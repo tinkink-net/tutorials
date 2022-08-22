@@ -171,7 +171,7 @@ CREATE USER 'user'@'172.8.8.2' IDENTIFIED BY 'password';
 CREATE USER 'user'@'172.8.8.0/255.255.255.0' IDENTIFIED BY 'password';
 ```
 
-## View user
+## View user list
 
 ```sql
 SELECT * FROM mysql.user;
@@ -179,13 +179,13 @@ SELECT * FROM mysql.user;
 SELECT user, host FROM mysql.user;
 ```
 
-## Change the user password
+## Change user password
 
 ```sql
-SET PASSWORD FOR 'user'@'%' = PASSWORD('new_password');
+ALTER USER 'user'@'%' IDENTIFIED BY 'new_password';
 ```
 
-## Delete the user
+## Delete user
 
 ```sql
 DROP USER 'user'@'%';

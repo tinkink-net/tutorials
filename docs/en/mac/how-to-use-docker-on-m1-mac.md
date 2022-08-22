@@ -22,7 +22,7 @@ Docker Desktop For Mac provides a version that runs on Apple Silicon chips, and 
 
 > Containerd is an implementation of this standard, and Docker adheres to it as well. Therefore, Containerd and Docker are almost compatible in use.
 
-Follow the official tutorial to install lima with Homebrew and you are ready to use it: ``sh
+Follow the official tutorial to install lima with Homebrew and you are ready to use it:
 
 ```sh
 # Install
@@ -44,7 +44,7 @@ As you can see, the use of ``lima nerdctl`` is almost identical to ``docker``. I
 limactl stop
 ```
 
-lima also allows you to set very many virtualization details, and to set up multiple virtual environments. More usage details can be found in the official documentation: <(https://github.com/lima-vm/lima>
+lima also allows you to set very many virtualization details, and to set up multiple virtual environments. More usage details can be found in the official documentation: <https://github.com/lima-vm/lima>
 
 ## Colima
 
