@@ -2,9 +2,9 @@
 
 ## What is Copilot
 
-Copilot (<https://copilot.github.com/>) is an AI coding aid provided by Github that provides AI-learning based coding suggestions during the coding process. In many cases, all that is needed is comments or function names, and Copilot can instance the complete code.
+Copilot (<https://github.com/features/copilot/>) is an AI coding aid provided by Github that provides AI-learning based coding suggestions during the coding process. In many cases, all that is needed is comments or function names, and Copilot can instance the complete code.
 
-Copilot is not yet available in full volume, and you need to request access to open it. Visit its official website <https://copilot.github.com/> and click the "Sign up" button to apply for access. Once you get the access, you can use Copilot on Github.
+Copilot is not free any more, the price is 10 dollars/month or 100 dollars/year. But you can try it for free for 2 months. Visit Github settings page (<https://github.com/settings/copilot>) and click the buttons to get access. Once you get the access, you can use Copilot on Github.
 
 ![Screenshot](/attachments/vscode/copilot-usage-and-shortcut/01.website.png)
 
