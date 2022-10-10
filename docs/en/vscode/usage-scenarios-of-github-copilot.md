@@ -4,7 +4,7 @@ Copilot (<https://copilot.github.com/>) is an AI coding aid provided by Github t
 
 But do you know, You can use Copilot in more usage scenarios? Copilot can also supplement test cases, comments, documents, number sequences, and even translations. In this article, we will introduce more usage scenarios of Copilot.
 
-> If you want to know the bases of Copilot, please refer to [How to use Github Copilot and shortcuts](/en/vscode/copilot-usage-and-shortcut/).
+> If you want to know the bases of Copilot, please refer to [How to use Github Copilot and shortcuts](/en/vscode/copilot-usage-and-shortcut.html).
 
 ## Solve algorithm problems
 
