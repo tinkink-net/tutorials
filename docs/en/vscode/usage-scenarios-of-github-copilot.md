@@ -208,6 +208,44 @@ const arr = [100, 99,
 const arr = [1, 3,
 ```
 
+## Dictionary
+
+Copilot can also be used as a dictionary. For example, you can use Copilot to look up the meaning of the word `test`.
+
+You can write the following text in the VSCode:
+
+```
+// explaine the word test
+test: a series of actions, events, etc., carried out in order to determine accuracy, reliability, or quality.
+```
+
+Then wait Copilot to suggest the code, and then press `Tab` to accept the suggestion, and you will get the following code:
+
+```
+// explaine the word test
+test: a series of actions, events, etc., carried out in order to determine accuracy, reliability, or quality.
+```
+
+You can add more words to look up:
+
+```
+// explaine the words
+test: a series of actions, events, etc., carried out in order to determine accuracy, reliability, or quality.
+algorithm:
+programming:
+LGTM:
+```
+
+Then wait Copilot to suggest the code, and then press `Tab` to accept the suggestion, and you will get the following code:
+
+```
+// explaine the words
+test: a series of actions, events, etc., carried out in order to determine accuracy, reliability, or quality.
+algorithm: a set of rules or procedures that must be followed in calculations or other problem-solving operations, especially by a computer.
+programming: the process of writing computer programs.
+LGTM: looks good to me.
+```
+
 ## Translation
 
 Copilot can also help you translate. For example, you can use Copilot to translate the following text from English to Chinese.
