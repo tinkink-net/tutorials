@@ -55,6 +55,6 @@ Copilot 也提供了一些快捷键，可以很方便地使用。
 
 然后，打开VSCode的设置，搜索`http.proxy`，并设置代理地址和端口。
 
-![代理设置截图](/attachments/vscode/copilot-use-and-shortcut/08.proxy-settings.png)
+![代理设置截图](/attachments/vscode/copilot-usage-and-shortcut/08.proxy-settings.png)
 
 设置完成后，重新启动VSCode，Copilot应该可以正常工作。
