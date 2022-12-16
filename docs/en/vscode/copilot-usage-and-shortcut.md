@@ -42,3 +42,21 @@ Copilot also provides some shortcut keys that can be easily used.
 - Trigger in-line Copilot: `Alt/Option + \` (Coplit hasn't given a suggestion or the suggestion has been rejected and wants to manually trigger it to provide a suggestion)
 
 ![Screenshot of shortcuts](/attachments/vscode/copilot-usage-and-shortcut/06.shortcut.jpg)
+
+## Http proxy
+
+Some users (for example, the users in mainland China) may encounter the problem of Copilot not working, and the reason is that Copilot cannot access the Internet or Github api. You can see the following error message in the output panel: `GitHub Copilot could not connect to server. Extension activation failed: "connect ETIMEDOUT xxx.xxx.xxx.xxx:443"`.
+
+In this case, you need to set the http proxy.
+
+First, get your http proxy info. You can ask your network administrator for the proxy address and port, or if you use a proxy software, you can find the proxy address and port in the proxy software settings.
+
+Below is an example of using the proxy software `ClashX`, you can find the proxy address and port in the `Settings` tab, the proxy address is `127.0.0.1:1080`.
+
+![Screenshot of proxy](/attachments/vscode/copilot-usage-and-shortcut/07.proxy.png)
+
+Then, open VSCode's settings, search `http.proxy`, and set the proxy address and port.
+
+![Screenshot of proxy settings](/attachments/vscode/copilot-usage-and-shortcut/08.proxy-settings.png)
+
+After setting, restart VSCode, and Copilot should work normally.

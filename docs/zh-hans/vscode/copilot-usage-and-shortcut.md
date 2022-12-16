@@ -40,3 +40,21 @@ Copilot 也提供了一些快捷键，可以很方便地使用。
 - 触发行内Copilot：`Alt/Option + \` （Coplit还没有给出建议或者建议被拒绝了，希望手工触发它提供建议）
 
 ![快捷键截图](/attachments/vscode/copilot-usage-and-shortcut/06.shortcut.jpg)
+
+## Http代理
+
+有些用户（比如中国大陆的用户）可能会遇到Copilot不工作的问题，原因是Copilot无法访问互联网或Github api。你可以在输出面板上看到以下错误信息：`GitHub Copilot could not connect to server. Extension activation failed: "connect ETIMEDOUT xxx.xxx.xxx:443"`。
+
+在这种情况下，你需要设置http代理。
+
+首先，获取你的http代理信息。你可以向你的网络管理员询问代理地址和端口，或者如果你使用代理软件，你可以在代理软件设置中找到代理地址和端口。
+
+下面是一个使用代理软件"ClashX"的例子，你可以在"设置"标签中找到代理地址和端口，代理地址是 "127.0.0.1:1080"。
+
+![代理截图](/attachments/vscode/copilot-usage-and-shortcut/07.proxy.png)
+
+然后，打开VSCode的设置，搜索`http.proxy`，并设置代理地址和端口。
+
+![代理设置截图](/attachments/vscode/copilot-use-and-shortcut/08.proxy-settings.png)
+
+设置完成后，重新启动VSCode，Copilot应该可以正常工作。
