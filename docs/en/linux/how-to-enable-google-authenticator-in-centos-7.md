@@ -62,10 +62,22 @@ PAM (pluggable authentication modules) authentication is a pluggable authenticat
 
 The Google Authenticator we installed above is also a PAM module.
 
-So let's first enable Google Authenticator authentication in the PAM configuration used by sshd. At the end of `/etc/pam.d/sshd` add the line
+So let's first enable Google Authenticator authentication in the PAM configuration used by sshd. Add the line below the second line of `/etc/pam.d/sshd`:
 
 ```
 auth required pam_google_authenticator.so
+```
+
+Note: the position of this line is very important, the modified file should be like this:
+
+```
+#%PAM-1.0
+auth       required     pam_sepermit.so
+auth       required     pam_google_authenticator.so
+auth       substack     password-auth
+
+# other lines
+......
 ```
 
 Next, you need to enable challenge authentication in the sshd configuration, find the following configuration in `/etc/ssh/sshd_config` and change it to `yes`.
