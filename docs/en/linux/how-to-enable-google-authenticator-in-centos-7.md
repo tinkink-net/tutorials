@@ -52,7 +52,7 @@ token before and after the current time.
 poor time synchronization, you can increase the window from its default
 If you experience problems with poor time synchronization, you can increase the window from its default size of +1min (window size of 3) to about +-4min (window size of 17 acceptable tokens).
 Do you want to do so? (y/n) y
-Do you want to do so?
+```
 
 At this point, Google Authenticator has been installed.
 
@@ -68,7 +68,7 @@ So let's first enable Google Authenticator authentication in the PAM configurati
 auth required pam_google_authenticator.so
 ```
 
-Next, you need to enable challenge authentication in the sshd configuration, find the following configuration in `/etc/ssh/sshd_config` and change it to ``yes``.
+Next, you need to enable challenge authentication in the sshd configuration, find the following configuration in `/etc/ssh/sshd_config` and change it to `yes`.
 
 ```
 # Change to no to disable s/key passwords
@@ -84,7 +84,7 @@ systemctl restart sshd.service
 
 ## Configuration file
 
-The Google Authenticator configuration file is in ``/root/.google_authenticator``, if you need to see it, you can use ``cat /root/.google_authenticator``.
+The Google Authenticator configuration file is in `/root/.google_authenticator`, if you need to see it, you can use `cat /root/.google_authenticator`.
 
 The configuration file consists of 3 parts: key + configuration + recovery code.
 

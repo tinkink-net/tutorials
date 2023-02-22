@@ -62,10 +62,22 @@ PAM（pluggable authentication modules） 认证是 Linux 系统中一种插件�
 
 上面我们安装的 Google Authenticator 也是一个 PAM 模块。
 
-因此我们首先在 sshd 用到的 PAM 配置中启用 Google Authenticator 认证。在`/etc/pam.d/sshd`末尾添加一行：
+因此我们首先在 sshd 用到的 PAM 配置中启用 Google Authenticator 认证。在`/etc/pam.d/sshd`第2行后添加一行：
 
 ```
 auth required pam_google_authenticator.so
+```
+
+注意位置，添加完成后如下：
+
+```
+#%PAM-1.0
+auth       required     pam_sepermit.so
+auth       required     pam_google_authenticator.so
+auth       substack     password-auth
+
+# 省略其他行
+......
 ```
 
 接下来还需要在 sshd 的配置中启用挑战应答认证，在`/etc/ssh/sshd_config`中找到下述配置，并修改为`yes`：
