@@ -20,7 +20,7 @@ At this point it is possible to set up a separate configuration file for the Nod
 
 ```
 server {
-    listen 80 ;
+    listen 80;
     server_name tinkinkink.net;
 
     error_log /var/log/nginx/tinkinkink_error.log;
