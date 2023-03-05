@@ -1,12 +1,12 @@
 # CentOS 7 如何修改时区
 
-<Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
+<Validator lang="zh-hans" :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
 
 > 修改时区需要使用root用户或者具有sudo权限的用户。
 
 ## 检查当前时区
 
-在CentOS 7中，可以使用以下命令检查当前时区：
+在现代 Linux 系统（如 Ubuntu、Debian、CentOS等）中，可以使用以下命令检查当前时区：
 
 ```sh
 timedatectl
@@ -68,6 +68,8 @@ America/Winnipeg
 timedatectl set-timezone Asia/Shanghai
 ```
 
+> 注意：可能需要sudo权限来执行上面的命令。`sudo timedatectl set-timezone Asia/Shanghai`
+
 上面的例子我们将时区设置为了中国标准时间`Asia/Shanghai`。
 
 重新检查当前时区：
@@ -95,6 +97,8 @@ NTP synchronized: yes
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+> 注意：可能需要sudo权限来执行上面的命令。`sudo timedatectl set-timezone Asia/Shanghai`
 
 ## 小结
 

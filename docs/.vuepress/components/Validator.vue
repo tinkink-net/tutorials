@@ -1,6 +1,6 @@
 <template>
     <div class="validator">
-        <div class="title">🎫 Content is validated at {{ date }} for</div>
+        <div class="title">{{ textFunc(date) }}</div>
         <div class="platform-list">
             <div v-for="platform in platformList" :key="platform">
                 ✅ {{ platform }}
@@ -11,12 +11,18 @@
 
 <script setup lang="ts">
 
-import { ref } from 'vue';
+const textMap = {
+    'en': (date) => `🎫 Content is validated at ${date} for`,
+    'zh-hans': (date) => `🎫 教程内容于 ${date} 在以下平台验证通过`,
+};
 
 const props = defineProps<{
     platformList: string[];
     date: Date;
+    lang: string;
 }>();
+
+const textFunc = textMap[props.lang || 'en'];
 
 </script>
 
