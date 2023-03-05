@@ -1,5 +1,7 @@
 # CentOS 7 如何修改时区
 
+<Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
+
 > 修改时区需要使用root用户或者具有sudo权限的用户。
 
 ## 检查当前时区

@@ -1,9 +1,9 @@
 <template>
     <div class="validator">
         <div class="title">🎫 Content is validated at {{ date }} for</div>
-        <div class="os-list">
-            <div v-for="os in osList" :key="os">
-                ✅ {{ os }}
+        <div class="platform-list">
+            <div v-for="platform in platformList" :key="platform">
+                ✅ {{ platform }}
             </div>
         </div>
     </div>
@@ -14,7 +14,7 @@
 import { ref } from 'vue';
 
 const props = defineProps<{
-    osList: string[];
+    platformList: string[];
     date: Date;
 }>();
 
@@ -37,11 +37,11 @@ const props = defineProps<{
     margin-bottom: 10px;
 }
 
-.validator .os-list {
+.validator .platform-list {
     display: flex;
 }
 
-.validator .os-list > div {
+.validator .platform-list > div {
     margin-right: 10px;
 }
 </style>

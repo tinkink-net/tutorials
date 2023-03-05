@@ -1,10 +1,12 @@
-# CentOS 7 How to change the time zone
+# How to change the time zone in Linux (Ubuntu, Debian, CentOS 7)
+
+<Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
 
 > To modify the time zone, you need to use the root user or a user with sudo privileges.
 
 ## Check the current time zone
 
-In CentOS 7, the current time zone can be checked using the following command.
+In modern Linux like Ubuntu, Debian or CentOS, the current time zone can be checked using the following command.
 
 ```sh
 timedatectl
@@ -66,6 +68,8 @@ Next you can set the time zone, using the following command.
 timedatectl set-timezone Asia/Shanghai
 ```
 
+> Note: You may need sudo privileges to execute the above command. `sudo timedatectl set-timezone Asia/Shanghai`
+
 In the above example we set the timezone to China Standard Time `Asia/Shanghai`.
 
 To recheck the current time zone.
@@ -93,6 +97,8 @@ The time zone can also be modified by using the softlink method.
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+> Note: You may need sudo privileges to execute the above command. `sudo timedatectl set-timezone Asia/Shanghai`
 
 ## Summary
 
