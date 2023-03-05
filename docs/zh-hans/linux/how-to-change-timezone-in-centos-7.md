@@ -1,4 +1,4 @@
-# CentOS 7 如何修改时区
+# Linux 如何修改时区（Ubuntu、Debian、CentOS）
 
 <Validator lang="zh-hans" :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
 
