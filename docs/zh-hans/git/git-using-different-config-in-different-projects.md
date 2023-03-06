@@ -1,6 +1,6 @@
 # GIT：在不同的项目中使用不同的配置项（git用户名/email和ssh公钥）
 
-<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+<Validator lang="zh-hans" :platform-list="['Git 2.37']" date="2023-03-06" />
 
 ## 背景
 
