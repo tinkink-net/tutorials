@@ -1,5 +1,7 @@
 # GIT：在不同的项目中使用不同的配置项（git用户名/email和ssh公钥）
 
+<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+
 ## 背景
 
 在使用 Git 时，我们常常会配置一些基本的配置项，例如用户名（`user.name`）和邮箱（`user.email`）等。如果没有配置的话，初次使用 Git 提交代码会报错：
@@ -74,6 +76,8 @@ git config user.email // tinymemo@somework.com
 git config user.name // Tinymemo
 git config user.email // tinymemo@somehobby.com
 ```
+
+> 注意：必须在项目目录下执行`git config`命令，否则会使用全局配置。
 
 这样就能很方便地实现在不同的项目中使用不同的 Git 配置项。
 

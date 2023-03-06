@@ -1,5 +1,7 @@
 # GIT: Use different config (git username / gmail or ssh keys) in different projects
 
+<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+
 ## Background
 
 When using Git, we often configure some basic configuration items, such as the user name (`user.name`) and the email (`user.email`). If they are not configured, the first time you use Git to commit code will report an error:
