@@ -1,6 +1,6 @@
 # GIT: Use different config (git username / gmail or ssh keys) in different projects
 
-<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+<Validator lang="zh-hans" :platform-list="['Git 2.37']" date="2023-03-06" />
 
 ## Background
 
@@ -76,6 +76,8 @@ git config user.email // tinymemo@somework.com
 git config user.name // Tinymemo
 git config user.email // tinymemo@somehobby.com
 ```
+
+> Note: you must run `git config` command in the project directory, otherwise it will use the global configuration.
 
 So we can make it easy to use different configuration in different projects.
 
