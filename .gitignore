@@ -1,7 +1,9 @@
-.DS_Store
 node_modules
-.temp
+*.log*
+.nuxt
+.nitro
 .cache
-/public
-other/
-*.draft.md
+.output
+.env
+dist
+.DS_Store
