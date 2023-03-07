@@ -1,3 +1,7 @@
+---
+description: Discover how to change the timezone on your Linux operating system with this step-by-step tutorial. Whether you're using Ubuntu, Debian, or CentOS, our comprehensive guide will show you how to use timedatectl to check and set the correct timezone.
+---
+
 # How to change the time zone in Linux (Ubuntu, Debian, CentOS 7)
 
 <Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />

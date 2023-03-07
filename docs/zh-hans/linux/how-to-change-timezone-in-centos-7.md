@@ -1,3 +1,7 @@
+---
+description: 本篇教程将教您如何一步一步在您的Linux操作系统上更改时区，无论您使用Ubuntu、Debian还是CentOS，我们全面的指南将向您展示如何使用timedatectl检查和设置正确的时区。
+---
+
 # Linux 如何修改时区（Ubuntu、Debian、CentOS）
 
 <Validator lang="zh-hans" :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
