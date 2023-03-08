@@ -80,7 +80,7 @@ running postrotate script
 
 No errors means the configuration file is correct.
 
-If you want to see results immediately, you can use ``logrotate -f`` to force a scroll cut, e.g.
+If you want to see results immediately, you can use `logrotate -f` to force a scroll cut, e.g.
 
 ```sh
 logrotate -f /etc/logrotate.d/nginx
