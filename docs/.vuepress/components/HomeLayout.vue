@@ -36,7 +36,7 @@ const redirectTo = (lang: string): void => {
 };
 
 if (typeof window !== 'undefined' && location.pathname === '/') {
-    const supportedLangs = ['en', 'zh-hans'];
+    const supportedLangs = ['en', 'zh-hans', 'zh-hant'];
     const lang = getLanguage(supportedLangs);
     redirectTo(lang);
 }

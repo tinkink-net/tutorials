@@ -2,6 +2,7 @@
 node_modules
 .temp
 .cache
+.nuxt
 /public
 other/
 *.draft.md

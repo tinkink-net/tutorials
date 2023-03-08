@@ -12,9 +12,14 @@ module.exports = {
             description: 'Tutorials of common development tools',
         },
         '/zh-hans/': {
-            lang: 'zh-CN',
+            lang: 'zh-Hans',
             title: '教程 | Tinkink',
             description: '常用开发工具教程',
+        },
+        '/zh-hant/': {
+            lang: 'zh-Hant',
+            title: '教程 | Tinkink',
+            description: '常用開發工具教程',
         },
     },
     head: [
@@ -40,6 +45,16 @@ module.exports = {
                 editLinkText: '协助改进本篇教程',
                 selectLanguageName: '简体中文',
                 sidebar: genSidebar('zh-hans'),
+            },
+            '/zh-hant/': {
+                navbar: [
+                    { text: '首頁', link: '/' },
+                    // { text: '教程', link: '/nginx' },
+                    // { text: 'GitHub', link: 'https://github.com/maiyatang2021/tutorials' },
+                ],
+                editLinkText: '協助改進本篇教程',
+                selectLanguageName: '繁體中文',
+                sidebar: genSidebar('zh-hant'),
             },
             '/en/': {
                 navbar: [

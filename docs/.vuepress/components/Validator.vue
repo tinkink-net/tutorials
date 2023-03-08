@@ -14,6 +14,7 @@
 const textMap = {
     'en': (date) => `🎫 Content is validated at ${date} for`,
     'zh-hans': (date) => `🎫 教程内容于 ${date} 在以下平台验证通过`,
+    'zh-hant': (date) => `🎫 教程内容于 ${date} 在以下平台驗證通過`,
 };
 
 const props = defineProps<{
