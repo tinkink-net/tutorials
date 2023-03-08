@@ -34,7 +34,7 @@ google-authenticator
 
 The page will show a huge QR code, at this point use Google Authenticator or a similar authenticator app to scan the QR code and add it to your phone.
 
-Then the app will ask some questions, just type ``y`` all the way and enter.
+Then the app will ask some questions, just type `y` all the way and enter.
 
 ```sh
 # Do you want to use time-based tokens?
