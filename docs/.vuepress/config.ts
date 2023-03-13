@@ -21,7 +21,7 @@ module.exports = {
             title: '教程 | Tinkink',
             description: '常用開發工具教程',
         },
-        '/jp': {
+        '/jp/': {
             lang: 'jp',
             title: 'チュートリアル | Tinkink',
             description: 'よく使う開発ツールのチュートリアル',
@@ -69,7 +69,7 @@ module.exports = {
                 selectLanguageName: 'English',
                 sidebar: genSidebar('en'),
             },
-            '/jp': {
+            '/jp/': {
                 navbar: [
                     { text: 'ホーム', link: '/' },
                 ],
