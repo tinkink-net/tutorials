@@ -1,5 +1,7 @@
 # Siliconチップ（M1/M2）MacコンピューターでのDockerの使用
 
+<Validator lang="jp" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+
 ## 背景と困難
 
 Appleは2020年に自社のチップ、Apple Siliconを搭載したコンピューターを正式に発売し、最初にリリースされたチップモデルはM1でした。このチップのアーキテクチャは、従来のx86からARMアーキテクチャに変更されました。

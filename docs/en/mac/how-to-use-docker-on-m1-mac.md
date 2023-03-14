@@ -1,5 +1,7 @@
 # Using Docker on Silicon chip (M1/M2) Mac computers
 
+<Validator :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+
 ## Background and difficulties
 
 Apple officially released computers with its own chip, Apple Silicon, in 2020, and the first chip model released with the computer was M1. This chip's architecture was changed from the classic x86 to the ARM architecture.

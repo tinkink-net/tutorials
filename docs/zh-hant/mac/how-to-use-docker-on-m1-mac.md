@@ -1,5 +1,7 @@
 # 在Silicon芯片(M1/M2)Mac電腦上使用Docker
 
+<Validator lang="zh-hans" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+
 ## 背景和困難
 
 蘋果於 2020 年正式發佈了搭載自研芯片 Apple Silicon 的電腦，隨電腦發佈的第一款芯片型號爲 M1 。這款芯片的架構由經典的 x86 改爲了 ARM 架構。
