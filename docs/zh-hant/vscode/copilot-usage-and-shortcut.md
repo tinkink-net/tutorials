@@ -4,7 +4,7 @@
 
 Copilot (<https://copilot.github.com/>) 是由 Github 提供的AI編碼輔助工具，它可以在編碼過程中提供基於 AI 學習的編碼建議。在很多情況下，只需要有註釋或者函數名稱，Copilot就可以實例完整的代碼。
 
-目前 Copilot 已經不再免費，需要支持10美元/月或者100美元/年。但你可以試用2個月。訪問 Github 設置頁面（<https://github.com/settings/copilot>），按頁面提示點擊按鈕以開通使用權限。當獲得開通權限後，就可以在 Github 上使用 Copilot。
+目前 Copilot 已經不再免費，需要支付10美元/月或者100美元/年。但你可以試用2個月。訪問 Github 設置頁面（<https://github.com/settings/copilot>），按頁面提示點擊按鈕以開通使用權限。當獲得開通權限後，就可以在 Github 上使用 Copilot。
 
 ![官網截圖](/attachments/vscode/copilot-usage-and-shortcut/01.website.png)
 
