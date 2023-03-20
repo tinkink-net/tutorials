@@ -21,8 +21,8 @@ module.exports = {
             title: '教程 | Tinkink',
             description: '常用開發工具教程',
         },
-        '/jp/': {
-            lang: 'jp',
+        '/ja/': {
+            lang: 'ja',
             title: 'チュートリアル | Tinkink',
             description: 'よく使う開発ツールのチュートリアル',
         },
@@ -69,13 +69,13 @@ module.exports = {
                 selectLanguageName: 'English',
                 sidebar: genSidebar('en'),
             },
-            '/jp/': {
+            '/ja/': {
                 navbar: [
                     { text: 'ホーム', link: '/' },
                 ],
                 editLinkText: 'この記事を改善する',
                 selectLanguageName: '日本語',
-                sidebar: genSidebar('jp'),
+                sidebar: genSidebar('ja'),
             },
         },
         repo: 'tinkink-net/tutorials',

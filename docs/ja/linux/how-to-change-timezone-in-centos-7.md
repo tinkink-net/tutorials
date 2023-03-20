@@ -4,7 +4,7 @@ description: このステップバイステップのチュートリアルでLinu
 
 # Linuxでタイムゾーンを変更する方法（Ubuntu、Debian、CentOS 7）
 
-<Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
+<Validator lang="ja" :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
 
 > タイムゾーンを変更するには、rootユーザーまたはsudo権限を持つユーザーを使用する必要があります。
 

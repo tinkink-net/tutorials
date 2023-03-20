@@ -1,6 +1,6 @@
 # GIT: 異なる設定（gitユーザー名/メールアドレスまたはSSHキー）を異なるプロジェクトで使用する方法
 
-<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+<Validator lang="ja" :platform-list="['Git 2.37']" date="2023-03-06" />
 
 ## 背景
 

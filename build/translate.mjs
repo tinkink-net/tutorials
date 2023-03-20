@@ -16,7 +16,7 @@ const convertContent = async (content, from, to) => {
         'en': 'English',
         'zh-hans': 'Chinese (Simplified)',
         'zh-hant': 'Chinese (Traditional)',
-        'jp': 'Japanese',
+        'ja': 'Japanese',
         'ko': 'Korean',
         'fr': 'French',
         'de': 'German',

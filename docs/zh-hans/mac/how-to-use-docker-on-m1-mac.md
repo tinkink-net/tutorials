@@ -1,6 +1,6 @@
 # 在Silicon芯片(M1/M2)Mac电脑上使用Docker
 
-<Validator lang="zh-hant" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+<Validator lang="zh-hans" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
 ## 背景和困难
 

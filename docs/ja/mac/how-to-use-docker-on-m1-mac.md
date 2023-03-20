@@ -1,6 +1,6 @@
 # Siliconチップ（M1/M2）MacコンピューターでのDockerの使用
 
-<Validator lang="jp" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+<Validator lang="ja" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
 ## 背景と困難
 
