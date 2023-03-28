@@ -50,12 +50,12 @@ limaは、非常に多くの仮想化の詳細を設定し、複数の仮想環�
 
 ## Colima
 
-[Colima](https://github.com/abiosoft/colima)は、Limaをベースにしたパッケージで、Dockerをコンテナソフトウェアとして使用する無料でオープンソースのソフトウェアです。
+[Colima](https://github.com/abiosoft/colima)は、Limaをベースにしたパッケージで、Dockerをコンテナソフトウェアとして使用しています。また、フリーでオープンソースのソフトウェアです。
 
 Colimaもインストールと使用が非常に簡単です。
 
 ```sh
-# Dockerクライアントがインストールされていない場合は、まずそれをインストールする必要があります
+# Dockerクライアントがインストールされていない場合は、まずインストールする必要があります
 brew install docker
 # Colimaをインストール
 brew install colima
@@ -67,16 +67,50 @@ brew install colima
 colima start
 ```
 
-起動が完了したら、`docker`コマンドを通常通り使用できます。追加のセットアップは必要ありません。
+起動が完了したら、通常どおり`docker`コマンドを使用できます。追加のセットアップは必要ありません。
 
-使用が終わったら、仮想化された環境をシャットダウンすることもできます：``sh colima start
+使用が終わったら、仮想化環境をシャットダウンすることもできます：``sh colima start
 
 ```sh
 colima stop
 ```
 
-## 要約
+## OrbStack
 
-- Apple Siliconチップを搭載したMacデバイスでは、Dockerの使用が簡単ではありません。
-- Docker Desktop For Macは利用可能ですが、中規模および大規模企業には料金がかかります。
-- Lima＆Colimaは無料でオープンソースのソリューションです。
+OrbStackは、macOS上でDockerコンテナとLinuxマシンを高速かつシンプルに実行する方法です。これは、使いやすいアプリケーションで、スーパーチャージされたWSLとDocker Desktop for macOSのようなものと考えることができます。
+
+OrbStackは、DockerコンテナとLinuxマシンを管理するGUIインターフェースとコマンドラインインターフェースを提供しています。
+
+公式ウェブサイトからダウンロードするか、Homebrewを使用してインストールできます。
+
+```sh
+brew install --cask orbstack
+```
+
+```sh
+`brew update --auto-update`を実行しています...
+
+...
+
+...
+
+==> Caveats
+OrbStackアプリを開いてセットアップを完了してください。
+
+==> Downloading https://cdn-updates.orbstack.dev/arm64/OrbStack_v0.5.1_985_arm64.dmg
+######################################################################## 100.0%
+==> Installing Cask orbstack
+==> Moving App 'OrbStack.app' to '/Applications/OrbStack.app'
+🍺  orbstack was successfully installed!
+```
+
+OrbStackを起動するだけで、Dockerを使用できます。
+
+![OrbStackのスクリーンショット](/attachments/mac/how-to-use-docker-on-m1-mac/01.screenshot-orbstack.png)
+
+## 概要
+
+- Apple Siliconチップを搭載したMacデバイスではDockerの使用が簡単ではない
+- Docker Desktop for Macは利用可能だが、中規模および大規模企業向けに料金がかかる
+- Lima＆Colimaは無料でオープンソースのソリューションである
+- OrbStackはGUIソリューションである

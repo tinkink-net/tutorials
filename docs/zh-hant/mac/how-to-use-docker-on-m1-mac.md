@@ -1,6 +1,6 @@
-# 在Silicon芯片(M1/M2)Mac電腦上使用Docker
+# 在蘋果Silicon芯片（M1/M2）Mac電腦上使用Docker
 
-<Validator lang="zh-hant" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+<Validator lang="zh-hans" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
 ## 背景和困難
 
@@ -75,8 +75,42 @@ colima start
 colima stop
 ```
 
+## OrbStack
+
+"OrbStack 是在 macOS 上運行 Docker 容器和 Linux 機器的快速、輕量、簡單的方式。您可以將其視爲超級 WSL 和 Docker Desktop 的 macOS 版本，所有這些都在一個易於使用的應用程序中。"（來自官方網站。）
+
+OrbStack 提供了一個 GUI 界面來管理 macOS 上的 Docker 容器和 Linux 機器。以及一個命令行界面。
+
+您可以從官方網站下載：<https://orbstack.dev/>，或使用 Homebrew 安裝：
+
+```sh
+brew install --cask orbstack
+```
+
+```sh
+Running `brew update --auto-update`...
+
+...
+
+...
+
+==> Caveats
+Open the OrbStack app to finish setup.
+
+==> Downloading https://cdn-updates.orbstack.dev/arm64/OrbStack_v0.5.1_985_arm64.dmg
+######################################################################## 100.0%
+==> Installing Cask orbstack
+==> Moving App 'OrbStack.app' to '/Applications/OrbStack.app'
+🍺  orbstack was successfully installed!
+```
+
+只需啓動 OrbStack，您現在就可以使用 Docker 了。
+
+![OrbStack 的截圖](/attachments/mac/how-to-use-docker-on-m1-mac/01.screenshot-orbstack.png)
+
 ## 小結
 
 - Apple Silicon 芯片的 Mac 設備使用 Docker 不是很容易
 - Docker Desktop For Mac 可用，但是對大中型公司收費
 - Lima & Colima 是免費開源的解決方案
+- OrbStack 是一個 GUI 解決方案

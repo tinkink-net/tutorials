@@ -75,8 +75,42 @@ You can also shut down the virtualized environment when you are done using it: `
 colima stop
 ```
 
+## OrbStack
+
+"OrbStack is a fast, light, and simple way to run Docker containers and Linux machines on macOS. You can think of it as a supercharged WSL and Docker Desktop for macOS, all in one easy-to-use app." (From the official website.)
+
+OrbStack offers a GUI interface for managing Docker containers and Linux machines on macOS. As well as a command line interface.
+
+You can download from the official website: <https://orbstack.dev/>, or use Homebrew to install:
+
+```sh
+brew install --cask orbstack
+```
+
+```sh
+Running `brew update --auto-update`...
+
+...
+
+...
+
+==> Caveats
+Open the OrbStack app to finish setup.
+
+==> Downloading https://cdn-updates.orbstack.dev/arm64/OrbStack_v0.5.1_985_arm64.dmg
+######################################################################## 100.0%
+==> Installing Cask orbstack
+==> Moving App 'OrbStack.app' to '/Applications/OrbStack.app'
+🍺  orbstack was successfully installed!
+```
+
+Just start OrbStack and you can use docker now.
+
+![Screenshot of OrbStack](/attachments/mac/how-to-use-docker-on-m1-mac/01.screenshot-orbstack.png)
+
 ## Summary
 
 - Docker is not easy to use for Mac devices with Apple Silicon chips
 - Docker Desktop For Mac is available, but charges for medium and large companies
 - Lima & Colima are free and open source solutions
+- OrbStack is a GUI solution
