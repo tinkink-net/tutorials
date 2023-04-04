@@ -25,6 +25,9 @@ const convertContent = async (content, from, to) => {
         'ru': 'Russian',
     };
 
+    // replace validator lang
+    content = content.replace(/lang="(.*?)"/g, 'lang="' + to + '"');
+
     if (to === 'zh-hant') {
         return convertToHant(content);
     } else {

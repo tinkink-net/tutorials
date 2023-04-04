@@ -1,3 +1,5 @@
+const openAiBaseUrl = process.env.OPENAI_BASEURL || 'https://api.openai.com';
+
 function splitContent(content, limit = 1300) {
     // split markdown content into chunks
     // split point is headings
@@ -71,7 +73,7 @@ async function translateChunk(from, to, text, headers) {
 
     while (tryTimes > 0) {
 
-        rawResponse = await fetch('https://api.openai.com/v1/chat/completions', options);
+        rawResponse = await fetch(openAiBaseUrl + '/v1/chat/completions', options);
         response = await rawResponse.json();
         console.log(response);
 
@@ -104,5 +106,5 @@ export async function translate(from, to, text) {
         ret.push(transltedChunk);
     }
 
-    return ret.join('\n');
+    return ret.join('\n\n');
 };
