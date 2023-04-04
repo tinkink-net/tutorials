@@ -85,8 +85,6 @@ You can use other units of time on macOS:
 - `d` - Days
 - `w` - Weeks
 
-This will search for all files modified within the last 24 hours in the current directory and its subdirectories.
-
 > You can also use `-atime` and `-ctime` options to search for files based on their access time and creation time respectively.
 
 ## Finding Files by Size
