@@ -7,6 +7,7 @@
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --no-optional --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
+    "translate": "node build/translate.mjs",
     "build": "vuepress build docs"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "2.0.0-beta.49",
+    "dotenv": "^16.0.3",
     "minimist": "^1.2.8",
     "postcss": "8",
     "vuepress": "2.0.0-beta.49"

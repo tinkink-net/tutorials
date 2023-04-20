@@ -2,6 +2,10 @@ import OpenCC from 'opencc';
 import minimist from 'minimist';
 import { getAllDocs, getDocContent, writeDocContent } from './docs.mjs';
 import { translate } from './openai.mjs';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
+
 const opencc = new OpenCC('s2t.json');
 
 const argv = minimist(process.argv.slice(2));
@@ -54,8 +58,25 @@ const convertDoc = async (doc, from, to) => {
 
 const main = async () => {
 
-    const to = argv.to;
+    let to = argv.to;
     let from = argv.from || 'en';
+
+    if (!to) {
+        await translateToAll(from);
+    } else {
+        await translateToOne(from, to);
+    }
+};
+
+const translateToAll = async (from) => {
+    for (const to of ['zh-hans', 'zh-hant', 'ja']) {
+        await translateToOne(from, to);
+    }
+};
+
+
+const translateToOne = async (from, to) => {
+
     if (to === 'zh-hant') {
         from = 'zh-hans';
     }
@@ -70,7 +91,6 @@ const main = async () => {
     if (argv.doc) {
         await convertDoc(argv.doc, from, to);
     } else {
-
         const docList = await getAllDocs(from);
         for (const doc of docList) {
             await convertDoc(doc, from, to);

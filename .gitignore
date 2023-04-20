@@ -3,6 +3,7 @@ node_modules
 .temp
 .cache
 .nuxt
+.env
 /public
 other/
 *.draft.md
