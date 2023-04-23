@@ -11,7 +11,7 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 
 ## Dockerをインストールする
 
-``yum``コマンドでDockerを直接インストールします。
+`yum`コマンドでDockerを直接インストールします。
 
 ```sh
 yum install docker-ce docker-ce-cli containerd.io
@@ -19,25 +19,25 @@ yum install docker-ce docker-ce-cli containerd.io
 
 ## 実行して自動起動を設定する
 
-Dockerはインストール後自動的に実行されません。手動で実行する必要があります: ``sh install docker-ce docker-ce-cli.
+Dockerはインストール後自動的に実行されません。手動で実行する必要があります:
 
 ```sh
 systemctl to start docker
 ```
 
-``docker ps``コマンドを使用してDockerの実行状態を確認できます。実行中のウィンドウのリストが出力された場合、起動に成功しています。
+`docker ps`コマンドを使用してDockerの実行状態を確認できます。実行中のウィンドウのリストが出力された場合、起動に成功しています。
 
 ```
 コンテナIDイメージコマンドは、ステータスポート名を作成します
 ```
 
-システムを再起動するたびにDockerが自動的に実行されるようにするには、自己起動を設定する必要があります: ``sh
+システムを再起動するたびにDockerが自動的に実行されるようにするには、自己起動を設定する必要があります:
 
 ```sh
 systemctl enable docker
 ```
 
-これで完了です。 `hello-world`イメージで確認できます: ``sh systemctl enable docker
+これで完了です。 `hello-world`イメージで確認できます:
 
 ```sh
 docker run hello-world

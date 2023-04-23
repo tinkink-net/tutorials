@@ -11,7 +11,7 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 
 ## Install Docker
 
-Install Docker directly with the ``yum`` command.
+Install Docker directly with the `yum` command.
 
 ```sh
 yum install docker-ce docker-ce-cli containerd.io
@@ -19,13 +19,13 @@ yum install docker-ce docker-ce-cli containerd.io
 
 ## Run and set autostart
 
-Docker will not run automatically after installation, you need to run it manually: ``sh install docker-ce docker-ce-cli.
+Docker will not run automatically after installation, you need to run it manually:
 
 ```sh
 systemctl to start docker
 ```
 
-You can use the ``docker ps`` command to check the running status of Docker. If you see the list of running windows output, then the startup is successful.
+You can use the `docker ps` command to check the running status of Docker. If you see the list of running windows output, then the startup is successful.
 
 ```
 The container ID image command creates the status port name
@@ -37,7 +37,7 @@ In order for Docker to run automatically every time you reboot your system, you 
 systemctl enable docker
 ```
 
-This is all done. You can verify this with the `hello-world` image: ``sh systemctl enable docker
+This is all done. You can verify this with the `hello-world` image:
 
 ```sh
 docker run hello-world
