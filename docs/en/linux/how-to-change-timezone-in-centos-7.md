@@ -4,7 +4,7 @@ description: Discover how to change the timezone on your Linux operating system 
 
 # How to change the time zone in Linux (Ubuntu, Debian, CentOS 7)
 
-<Validator :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
+<Validator lang="en" :platform-list="['Ubuntu 22.04','Debian 11.6','CentOS 7.9']" date="2023-03-05" />
 
 > To modify the time zone, you need to use the root user or a user with sudo privileges.
 
