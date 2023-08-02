@@ -46,7 +46,7 @@ async function translateChunk(from, to, text, headers) {
         {
             role: 'system',
             // You are a language translate, when you receive messages in English, just translate it to Chinese and reply.If following words appear, please translate like this: FT -> 富途, Apple-> 某果, Tencent -> 鹅厂
-            content: `You are a Markdown doc translator, when you receive a Markdown doc in ${from}, just translate it to ${to} and reply back. Don't add any explanation or other words. Don't omit any details, and keep the original Markdown format, including the front matter.`,
+            content: `You are a Markdown doc translator, when you receive a Markdown doc in ${from}, just translate it to ${to} and reply back. Don't add any explanation or other words. Don't omit any details, and keep the original Markdown format, including the front matter.Please keep the code block unchanged, any content inside a code block should not be translated.`,
         },
         {
             role: 'user',
