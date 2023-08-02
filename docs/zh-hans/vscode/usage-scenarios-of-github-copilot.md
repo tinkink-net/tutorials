@@ -30,13 +30,13 @@ const quickSort = (arr) => {
   const left = [];
   const right = [];
   for (let i = 0; i < arr.length; i++) {
-    如果（arr[i] < pivot） {
-      left.push(arr[i])。
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
     } else {
-      right.push(arr[i])。
+      right.push(arr[i]);
     }
   }
-  return quickSort(left).concat([pivot], quickSort(right))。
+  return quickSort(left).concat([pivot], quickSort(right));
 };
 ```
 
@@ -48,14 +48,14 @@ const quickSort = (arr) => {
 const bubbleSort = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length - 1 - i; j++) {
-      如果（arr[j] > arr[j + 1]） {
-        让temp = arr[j + 1];
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j + 1];
         arr[j + 1] = arr[j];
         arr[j] = temp;
       }
     }
   }
-  返回 arr;
+  return arr;
 };
 ```
 
@@ -110,27 +110,27 @@ expect(userService.getUserInfo()).toEqual({
 
 ## 写注释
 
-Copilot还可以帮助你写注释。例如，你可以用Copilot为上一节中的 "quickSort "函数写注释。
+Copilot还可以帮助你写注释。例如，你可以用Copilot为上一节中的 `quickSort`函数写注释。
 
 以JavaScript为例，你可以在VSCode中写下以下文字。
 
-```
+```js
 const quickSort = (arr) => {
   if (arr.length <= 1) {
-    返回arr。
+    return arr;
   }
   const pivotIndex = Math.floor(arr.length / 2);
   const pivot = arr.splice(pivotIndex, 1)[0];
   const left = [];
   const right = [];
   for (let i = 0; i < arr.length; i++) {
-    如果（arr[i] < pivot） {
-      left.push(arr[i])。
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
     } else {
-      right.push(arr[i])。
+      right.push(arr[i]);
     }
   }
-  return quickSort(left).concat([pivot], quickSort(right))。
+  return quickSort(left).concat([pivot], quickSort(right));
 };
 ```
 
@@ -141,21 +141,21 @@ const quickSort = (arr) => {
  *使用快速排序对数组进行排序
  */
 const quickSort = (arr) => {
-  如果(arr.length <= 1) {
-    返回arr。
+  if (arr.length <= 1) {
+    return arr;
   }
   const pivotIndex = Math.floor(arr.length / 2);
   const pivot = arr.splice(pivotIndex, 1)[0];
   const left = [];
   const right = [];
   for (let i = 0; i < arr.length; i++) {
-    如果（arr[i] < pivot） {
-      left.push(arr[i])。
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
     } else {
-      right.push(arr[i])。
+      right.push(arr[i]);
     }
   }
-  return quickSort(left).concat([pivot], quickSort(right))。
+  return quickSort(left).concat([pivot], quickSort(right));
 };
 ```
 
@@ -186,7 +186,7 @@ Copilot还可以帮助你编写数字序列。例如，你可以用Copilot生成
 
 以JavaScript为例，你可以在VSCode中写下以下文字。
 
-```
+```js
 // 从1到100的数字数组
 const arr = [1, 2,
 ```
