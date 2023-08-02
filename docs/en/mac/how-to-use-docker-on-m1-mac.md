@@ -1,6 +1,6 @@
 # Using Docker on Silicon chip (M1/M2) Mac computers
 
-<Validator :platform-list="['macOS 13.2.1']" date="2023-03-14" />
+<Validator lang="en" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
 ## Background and difficulties
 

@@ -1,6 +1,6 @@
 # How to set timer with systemd in Linux
 
-<Validator :platformList="['Ubuntu 22.10', 'Debian 11', 'CentOS Stream 9']" date="2023-03-29" />
+<Validator lang="en" :platformList="['Ubuntu 22.10', 'Debian 11', 'CentOS Stream 9']" date="2023-03-29" />
 
 ## Background
 

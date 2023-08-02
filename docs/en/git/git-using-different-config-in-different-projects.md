@@ -1,6 +1,6 @@
 # GIT: Use different config (git username / gmail or ssh keys) in different projects
 
-<Validator :platform-list="['Git 2.37']" date="2023-03-06" />
+<Validator lang="en" :platform-list="['Git 2.37']" date="2023-03-06" />
 
 ## Background
 
