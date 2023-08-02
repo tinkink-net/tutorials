@@ -14,6 +14,7 @@ const getLanguage = (supportedLangs: string[]): string => {
         'zh-hk': 'zh-hant',
         'jp': 'ja',
         'ja-jp': 'ja',
+        'de-de': 'de',
     };
     for (let i = uaLangs.length; i--;) {
         const lang = uaLangs[i];
@@ -38,7 +39,7 @@ const redirectTo = (lang: string): void => {
 };
 
 if (typeof window !== 'undefined' && location.pathname === '/') {
-    const supportedLangs = ['en', 'zh-hans', 'zh-hant', 'ja'];
+    const supportedLangs = ['en', 'zh-hans', 'zh-hant', 'ja', 'de'];
     const lang = getLanguage(supportedLangs);
     redirectTo(lang);
 }

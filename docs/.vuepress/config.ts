@@ -26,6 +26,11 @@ module.exports = {
             title: 'チュートリアル | Tinkink',
             description: 'よく使う開発ツールのチュートリアル',
         },
+        '/de/': {
+            lang: 'de',
+            title: 'Tutorials | Tinkink',
+            description: 'Tutorials von gängigen Entwicklungstools',
+        },
     },
     head: [
         ['link', { rel: 'icon', href: '/assets/logo.png' }],
@@ -77,6 +82,14 @@ module.exports = {
                 editLinkText: 'この記事を改善する',
                 selectLanguageName: '日本語',
                 sidebar: genSidebar('ja'),
+            },
+            '/de/': {
+                navbar: [
+                    { text: 'Startseite', link: '/' },
+                ],
+                editLinkText: 'Hilf mit, diesen Artikel zu verbessern',
+                selectLanguageName: 'Deutsch',
+                sidebar: genSidebar('de'),
             },
         },
         repo: 'tinkink-net/tutorials',
