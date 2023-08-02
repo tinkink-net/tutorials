@@ -25,7 +25,7 @@ ClientAliveInterval 60
 ClientAliveCountMax 5
 ```
 
-``ClientAliveInterval``は、クライアントに「ハートビート」を送信する頻度を示し、``ClientAliveCountMax``は、返信がない場合に切断する回数を示します。したがって、上記の設定は、60秒ごとにクライアントにハートビートを送信し、返信が5回ない場合に切断することを意味します。
+`ClientAliveInterval`は、クライアントに「ハートビート」を送信する頻度を示し、`ClientAliveCountMax`は、返信がない場合に切断する回数を示します。したがって、上記の設定は、60秒ごとにクライアントにハートビートを送信し、返信が5回ない場合に切断することを意味します。
 
 設定後にsshdサービスを再起動します：`systemctl restart sshd.service`または`service sshd restart`。
 

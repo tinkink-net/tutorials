@@ -25,7 +25,7 @@ ClientAliveInterval 60
 ClientAliveCountMax 5
 ```
 
-Where ``ClientAliveInterval`` indicates how often to send a "heartbeat" to the client, and ``ClientAliveCountMax`` indicates how many times to disconnect if no reply is received. So the above configuration means: send a heartbeat to the client every 60s, and disconnect when no reply is received 5 times.
+Where `ClientAliveInterval` indicates how often to send a "heartbeat" to the client, and `ClientAliveCountMax` indicates how many times to disconnect if no reply is received. So the above configuration means: send a heartbeat to the client every 60s, and disconnect when no reply is received 5 times.
 
 Restart the sshd service after setting: `systemctl restart sshd.service` or `service sshd restart`.
 
