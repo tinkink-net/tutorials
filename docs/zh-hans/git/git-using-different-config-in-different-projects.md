@@ -95,7 +95,7 @@ ssh-keygen -t rsa
 注意文件名不要使用默认的`id_rsa`，否则会和已有的公钥冲突。
 
 ```
-Enter file in which to save the key (/Users/toobug/.ssh/id_rsa): id_rsa_hobby
+Enter file in which to save the key (/Users/tinymemo/.ssh/id_rsa): id_rsa_hobby
 ```
 
 剩下的一路回车即可。

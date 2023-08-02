@@ -95,7 +95,7 @@ ssh-keygen -t rsa
 Please note the file name, can not be the default `id_rsa` name, otherwise it will conflict with the existing public key.
 
 ```
-Enter file in which to save the key (/Users/toobug/.ssh/id_rsa): id_rsa_hobby
+Enter file in which to save the key (/Users/tinymemo/.ssh/id_rsa): id_rsa_hobby
 ```
 
 Just press enter all the way.

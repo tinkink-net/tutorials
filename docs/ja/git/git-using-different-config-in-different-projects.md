@@ -95,7 +95,7 @@ ssh-keygen -t rsa
 ファイル名に注意してください。デフォルトの`id_rsa`名にすることはできません。そうすると、既存の公開キーと競合します。
 
 ```
-Enter file in which to save the key (/Users/toobug/.ssh/id_rsa): id_rsa_hobby
+Enter file in which to save the key (/Users/tinymemo/.ssh/id_rsa): id_rsa_hobby
 ```
 
 すべてEnterを押してください。
