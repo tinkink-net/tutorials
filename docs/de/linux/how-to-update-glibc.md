@@ -64,7 +64,7 @@ Als nächstes müssen wir den Quellcode extrahieren:
 tar -xvf glibc-2.17.tar.gz
 ```
 
-Dann sehen Sie ein Verzeichnis namens `glibc-2.17`. Wenn Sie Probleme beim Extrahieren des Quellcodes haben, können Sie [hier](/de/linux/wie-man-komprimiert-und-entpackt.html) nachsehen, wie man komprimiert und entpackt.
+Dann sehen Sie ein Verzeichnis namens `glibc-2.17`. Wenn Sie Probleme beim Extrahieren des Quellcodes haben, können Sie [hier](/de/linux/how-to-compress-and-decompress.html) nachsehen, wie man komprimiert und entpackt.
 
 Wir müssen in das Verzeichnis wechseln, den Quellcode kompilieren und dann installieren:
 

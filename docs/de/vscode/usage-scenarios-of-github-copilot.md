@@ -4,7 +4,7 @@ Copilot (<https://copilot.github.com/>) ist eine KI-Codierhilfe, die von Github 
 
 Aber wussten Sie, dass Sie Copilot in noch mehr Anwendungsszenarien verwenden können? Copilot kann auch Testfälle, Kommentare, Dokumente, Zahlenfolgen und sogar Übersetzungen ergänzen. In diesem Artikel werden wir weitere Anwendungsszenarien von Copilot vorstellen.
 
-> Wenn Sie die Grundlagen von Copilot kennenlernen möchten, lesen Sie bitte [Wie man Github Copilot und Tastenkombinationen verwendet](/de/vscode/copilot-verwendung-und-tastenkombinationen.html).
+> Wenn Sie die Grundlagen von Copilot kennenlernen möchten, lesen Sie bitte [Wie man Github Copilot und Tastenkombinationen verwendet](/de/vscode/copilot-usage-and-shortcut.html).
 
 ## Löse Algorithmusprobleme
 
