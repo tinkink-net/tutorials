@@ -6,9 +6,10 @@
   "scripts": {
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --no-optional --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev docs",
+    "dev": "vitepress dev docs",
+    "preview": "vitepress preview docs",
     "translate": "node build/translate.mjs",
-    "build": "vuepress build docs"
+    "build": "vitepress build docs"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "dotenv": "^16.0.3",
     "minimist": "^1.2.8",
     "postcss": "8",
+    "vitepress": "1.0.0-rc.4",
     "vuepress": "2.0.0-beta.49"
   },
   "optionalDependencies": {

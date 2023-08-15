@@ -7,3 +7,4 @@ node_modules
 /public
 other/
 *.draft.md
+docs/.vitepress/cache

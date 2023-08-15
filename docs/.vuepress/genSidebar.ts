@@ -20,7 +20,7 @@ const genGroup = function (subPath: string = ''): GroupItem[] {
     const ret: GroupItem[] = [];
 
     children.filter((childPath) => /^[^.]/.test(childPath)).forEach((childPath) => {
-        if (childPath === 'README.md') {
+        if (childPath === 'index.md') {
             return;
         }
 
