@@ -21,6 +21,10 @@ export default defineConfig({
                     { text: 'Vscode', link: '/en/vscode/copilot-usage-and-shortcut.html' },
                     { text: 'Media', link: '/en/media/convert-compress-video-via-ffmpeg.html' },
                 ],
+                editLink: {
+                    text: 'Help improve this page',
+                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                },
             }
         },
         'zh-hans': {
@@ -41,6 +45,10 @@ export default defineConfig({
                     { text: 'Vscode', link: '/zh-hans/vscode/copilot-usage-and-shortcut.html' },
                     { text: '媒体', link: '/zh-hans/media/convert-compress-video-via-ffmpeg.html' },
                 ],
+                editLink: {
+                    text: '协助改进本页面',
+                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                },
             },
         },
         'zh-hant': {
@@ -60,7 +68,11 @@ export default defineConfig({
                     { text: 'Nginx', link: '/zh-hant/nginx/nginx-https-config.html' },
                     { text: 'Vscode', link: '/zh-hant/vscode/copilot-usage-and-shortcut.html' },
                     { text: '媒體', link: '/zh-hant/media/convert-compress-video-via-ffmpeg.html' }
-                ]
+                ],
+                editLink: {
+                    text: '協助改進本頁面',
+                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                },
             },
         },
         ja: {
@@ -80,7 +92,11 @@ export default defineConfig({
                     { text: 'Nginx', link: '/ja/nginx/nginx-https-config.html' },
                     { text: 'Vscode', link: '/ja/vscode/copilot-usage-and-shortcut.html' },
                     { text: 'メディア', link: '/ja/media/convert-compress-video-via-ffmpeg.html' }
-                ]
+                ],
+                editLink: {
+                    text: 'このページを改善するのを手伝ってください',
+                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                },
             }
         },
         de: {
@@ -100,7 +116,11 @@ export default defineConfig({
                     { text: 'Nginx', link: '/de/nginx/nginx-https-config.html' },
                     { text: 'Vscode', link: '/de/vscode/copilot-usage-and-shortcut.html' },
                     { text: 'Medien', link: '/de/media/convert-compress-video-via-ffmpeg.html' }
-                ]
+                ],
+                editLink: {
+                    text: 'Helfen Sie, diese Seite zu verbessern',
+                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                },
             }
         },
     },
@@ -110,8 +130,8 @@ export default defineConfig({
         ['script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-82JX9NZ3NN');`],
         ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3100848271969177', crossorigin: 'anonymous' }],
     ],
-    outDir: 'public',
-
+    outDir: 'dist',
+    lastUpdated: true,
     themeConfig: {
         i18nRouting: true,
         logo: '/assets/logo.png',
@@ -120,5 +140,18 @@ export default defineConfig({
             { icon: 'github', link: 'https://github.com/tinkink-net/tutorials' },
             { icon: 'twitter', link: 'https://twitter.com/tinkink_net' },
         ]
+    },
+    transformHead(context) {
+        // add link alternate for i18n
+        return ['en', 'zh-hans', 'zh-hant', 'ja', 'de'].map((lang) => {
+            const pageLang = context.pageData.relativePath.split('/')[0];
+            // if (lang === pageLang) return;
+            return ['link', {
+                    rel: 'alternate',
+                    hreflang: lang,
+                    href: `https://tutorials.tinkink.net/${lang}${context.pageData.relativePath.replace('/' + pageLang + '/', '/' + lang + '/')}`
+                }
+            ];
+        });
     },
 });
