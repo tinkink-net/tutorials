@@ -163,4 +163,7 @@ export default defineConfig({
             ];
         });
     },
+    rewrites: {
+        ':lang/:topic/(.*)/(\\d+[.-]):article': '/:lang/:topic/:article',
+    },
 });
