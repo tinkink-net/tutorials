@@ -164,6 +164,11 @@ export default defineConfig({
         });
     },
     rewrites: {
-        ':lang/:topic/(.*)/(\\d+[.-]):article': '/:lang/:topic/:article',
+        // no chapter folder
+        ':lang/:topic/(\\d+[.-]):article': ':lang/:topic/:article',
+        // chapter folder & ordered articles
+        ':lang/:topic/:chapter/(\\d+[.-]):article': ':lang/:topic/:article',
+        // chapter folder & unordered articles
+        ':lang/:topic/:chapter/:article': ':lang/:topic/:article',
     },
 });
