@@ -20,6 +20,14 @@ const getTitle = function (fileFullPath: string): string {
     return '';
 };
 
+const normalizeFolderTitle = function (str: string): string {
+    const chapterReg = /^(\d+)[-.]/;
+    let chapter = str.replace(chapterReg, 'Chapter $1.')
+    let title = str.replace(chapterReg, '').trim()
+    title = title.charAt(0).toUpperCase() + title.slice(1).replace(/-/g, ' ');
+    return `${chapter} ${title}`;
+};
+
 const genItems = function (topicPath: string): DefaultTheme.SidebarItem[] {
 
     topicPath = topicPath.replace(/^\//, '');
@@ -39,7 +47,7 @@ const genItems = function (topicPath: string): DefaultTheme.SidebarItem[] {
             // if is directory, add a group and call genGroup recursively
             const children = genItems(childPath);
             ret.push({
-                text: childFilename.replace(/^\d+\./, '').trim(),
+                text: childFilename.replace(/^(\d+)[-.]/, 'Chapter $1. ').trim(),
                 items: children,
             });
         } else {

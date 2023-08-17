@@ -21,7 +21,7 @@ const textMap = {
 
 const props = defineProps<{
     platformList: string[];
-    date: Date;
+    date: string;
     lang: string;
 }>();
 
