@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress';
 import genSidebar from './genSidebar';
 
+const DOMAIN = 'https://tutorials.tinkink.net';
+const GITHUB = 'https://github.com/tinkink-net/tutorials';
+
 export default defineConfig({
     locales: {
         en: {
@@ -23,7 +26,7 @@ export default defineConfig({
                 ],
                 editLink: {
                     text: 'Help improve this page',
-                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                    pattern: GITHUB + '/edit/master/docs/:path',
                 },
             }
         },
@@ -47,7 +50,7 @@ export default defineConfig({
                 ],
                 editLink: {
                     text: '协助改进本页面',
-                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                    pattern: GITHUB + '/edit/master/docs/:path',
                 },
             },
         },
@@ -71,7 +74,7 @@ export default defineConfig({
                 ],
                 editLink: {
                     text: '協助改進本頁面',
-                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                    pattern: GITHUB + '/edit/master/docs/:path',
                 },
             },
         },
@@ -95,7 +98,7 @@ export default defineConfig({
                 ],
                 editLink: {
                     text: 'このページを改善するのを手伝ってください',
-                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                    pattern: GITHUB + '/edit/master/docs/:path',
                 },
             }
         },
@@ -119,7 +122,7 @@ export default defineConfig({
                 ],
                 editLink: {
                     text: 'Helfen Sie, diese Seite zu verbessern',
-                    pattern: 'https://github.com/tinkink-net/tutorials/edit/master/docs/:path',
+                    pattern: GITHUB + '/edit/master/docs/:path',
                 },
             }
         },
@@ -137,19 +140,25 @@ export default defineConfig({
         logo: '/assets/logo.png',
         sidebar: genSidebar(),
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/tinkink-net/tutorials' },
+            { icon: 'github', link: GITHUB },
             { icon: 'twitter', link: 'https://twitter.com/tinkink_net' },
         ]
     },
     transformHead(context) {
         // add link alternate for i18n
-        return ['en', 'zh-hans', 'zh-hant', 'ja', 'de'].map((lang) => {
+        return ['en', 'zh-Hans', 'zh-Hant', 'ja', 'de', 'x-default'].map((lang) => {
             const pageLang = context.pageData.relativePath.split('/')[0];
-            // if (lang === pageLang) return;
+            const pageLangReg = new RegExp('^' + pageLang + '/');
+
+            let altPathLang = lang.toLowerCase();
+            if (lang === 'x-default') {
+                altPathLang = 'en';
+            }
+            const altPath = context.pageData.relativePath.replace(pageLangReg, altPathLang + '/').replace(/\.md$/, '.html');
             return ['link', {
                     rel: 'alternate',
                     hreflang: lang,
-                    href: `https://tutorials.tinkink.net/${lang}${context.pageData.relativePath.replace('/' + pageLang + '/', '/' + lang + '/')}`
+                    href: DOMAIN + '/' + altPath,
                 }
             ];
         });
