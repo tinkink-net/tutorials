@@ -130,7 +130,7 @@ export default defineConfig({
         ['script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-82JX9NZ3NN');`],
         ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3100848271969177', crossorigin: 'anonymous' }],
     ],
-    outDir: 'dist',
+    outDir: '../dist',
     lastUpdated: true,
     themeConfig: {
         i18nRouting: true,
