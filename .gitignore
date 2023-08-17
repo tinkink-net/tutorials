@@ -4,6 +4,7 @@ node_modules
 .cache
 .nuxt
 .env
-/public
+/dist
 other/
 *.draft.md
+docs/.vitepress/cache

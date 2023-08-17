@@ -1,8 +1,11 @@
-<template>
-redirecting...
-</template>
+---
+layout: false
+title: Home
+---
 
-<script lang="ts">
+Redirecting...
+
+<script setup lang="ts">
 const getLanguage = (supportedLangs: string[]): string => {
     let uaLangs = navigator.languages.slice();
     if (!uaLangs) uaLangs = [navigator.language];
@@ -35,6 +38,7 @@ const getLanguage = (supportedLangs: string[]): string => {
 };
 
 const redirectTo = (lang: string): void => {
+    // console.log('redirect to ' + lang);
     location.replace(`/${lang}/`);
 };
 
