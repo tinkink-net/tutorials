@@ -31,24 +31,30 @@ const normalizeFolderTitle = function (str: string): string {
     return `${chapter}${title}`;
 };
 
-const genItems = function (topicPath: string): DefaultTheme.SidebarItem[] {
+const genItems = function (topicPath: string, folderPath?: string): DefaultTheme.SidebarItem[] {
 
     topicPath = topicPath.replace(/^\//, '');
-    const topicFullPath = path.join(rootPath, topicPath);
-    const children = fs.readdirSync(topicFullPath);
+    if (!folderPath) folderPath = topicPath;
+    folderPath = folderPath.replace(/^\//, '');
+
+    // const topicFullPath = path.join(rootPath, topicPath);
+    const folderFullPath = path.join(rootPath, folderPath);
+    const children = fs.readdirSync(folderFullPath);
 
     const ret: DefaultTheme.SidebarItem[] = [];
 
     children.filter((childFilename) => /^[^.]/.test(childFilename)).forEach((childFilename) => {
 
-        const childPath = `/${topicPath}/${childFilename}`;
-        const childFullPath = path.join(topicFullPath, childFilename);
+        const childPath = `/${folderPath}/${childFilename}`;
+        const childRewritePath = `/${topicPath}/${childFilename.replace(/^\d+[.-]/, '').trim()}`;
+        // const childRewritePath = `/${topicPath}/${childFilename}`;
+        const childFullPath = path.join(folderFullPath, childFilename);
 
         const isDirectory = fs.statSync(childFullPath).isDirectory();
 
         if (isDirectory) {
             // if is directory, add a group and call genGroup recursively
-            const children = genItems(childPath);
+            const children = genItems(topicPath, childPath);
             ret.push({
                 text: normalizeFolderTitle(childFilename),
                 items: children,
@@ -58,13 +64,13 @@ const genItems = function (topicPath: string): DefaultTheme.SidebarItem[] {
             if (childFilename === 'index.md') {
                 ret.unshift({
                     text: getTitle(childFullPath),
-                    link: childPath,
+                    link: childRewritePath,
                 })
                 return;
             }
             ret.push({
                 text: getTitle(childFullPath),
-                link: childPath,
+                link: childRewritePath,
             });
         }
 
