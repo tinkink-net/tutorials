@@ -31,16 +31,16 @@ const textFunc = textMap[props.lang || 'en'];
 
 <style scoped>
 .validator {
+    margin-top: 20px;
     padding: 20px;
     /* light green */
-    background-color: var(--c-bg-light);
-    border: 1px solid var(--c-border);
+    background-color: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-border);
     border-radius: 5px;
-    color: var(--c-text);
+    color: var(--vp-c-text);
     font-weight: bold;
     font-size: 14px;
 }
-
 .validator .title {
     font-size: 16px;
     margin-bottom: 10px;
