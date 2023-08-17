@@ -24,10 +24,10 @@ const normalizeFolderTitle = function (str: string): string {
     const chapterReg = /^(\d+)[-.]/;
     let chapter = '';
     if (chapterReg.test(str)) {
-        chapter = str.replace(chapterReg, 'Chapter $1. ')
+        chapter = 'Chapter ' + str.match(chapterReg)![1] + '. ';
     }
     let title = str.replace(chapterReg, '').trim()
-    title = title.charAt(0).toUpperCase() + title.slice(1).replace(/-/g, ' ');
+    title = title.charAt(0).toUpperCase() + title.slice(1).replace(/[-_]/g, ' ');
     return `${chapter}${title}`;
 };
 
@@ -55,6 +55,13 @@ const genItems = function (topicPath: string): DefaultTheme.SidebarItem[] {
             });
         } else {
             // if is file, add a link
+            if (childFilename === 'index.md') {
+                ret.unshift({
+                    text: getTitle(childFullPath),
+                    link: childPath,
+                })
+                return;
+            }
             ret.push({
                 text: getTitle(childFullPath),
                 link: childPath,
