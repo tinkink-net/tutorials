@@ -10,7 +10,7 @@ Copilot is not free any more, the price is 10 dollars/month or 100 dollars/year.
 
 ## Installing the plugin
 
-To use Copilot, you need to install a plugin, search `Copilot` in VSCode's plugin menu to find the plugin, the name is `Github Copilot`, the corresponding plugin marketplace address is <https://marketplace.visualstudio.com/items? itemName=GitHub.copilot>, install it.
+To use Copilot, you need to install a plugin, search `Copilot` in VSCode's plugin menu to find the plugin, the name is `Github Copilot`, the corresponding plugin marketplace address is <https://marketplace.visualstudio.com/items?itemName=GitHub.copilot>, install it.
 
 ![Installation screenshot](/attachments/vscode/copilot-usage-and-shortcut/02.install.png)
 
