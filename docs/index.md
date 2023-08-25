@@ -5,6 +5,12 @@ title: Home
 
 Redirecting...
 
+- [English](/en/)
+- [简体中文](/zh-hans/)
+- [繁體中文](/zh-hant/)
+- [日本語](/ja/)
+- [Deutsch](/de/)
+
 <script setup lang="ts">
 const getLanguage = (supportedLangs: string[]): string => {
     let uaLangs = navigator.languages.slice();
