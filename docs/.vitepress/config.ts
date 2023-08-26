@@ -146,15 +146,17 @@ export default defineConfig({
     },
     transformHead(context) {
         // add link alternate for i18n
+        const pageLang = context.pageData.relativePath.split('/')[0];
+        if (!pageLang || pageLang === 'index.md') return;
+        const pageLangReg = new RegExp('^' + pageLang + '/');
+
         return ['en', 'zh-Hans', 'zh-Hant', 'ja', 'de', 'x-default'].map((lang) => {
-            const pageLang = context.pageData.relativePath.split('/')[0];
-            const pageLangReg = new RegExp('^' + pageLang + '/');
 
             let altPathLang = lang.toLowerCase();
             if (lang === 'x-default') {
                 altPathLang = 'en';
             }
-            const altPath = context.pageData.relativePath.replace(pageLangReg, altPathLang + '/').replace(/\.md$/, '.html');
+            const altPath = context.pageData.relativePath.replace(pageLangReg, altPathLang + '/').replace(/\.md$/, '.html').replace(/\/index.html$/, '/');
             return ['link', {
                     rel: 'alternate',
                     hreflang: lang,
