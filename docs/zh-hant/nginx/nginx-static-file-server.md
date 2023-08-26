@@ -60,7 +60,7 @@ sudo service nginx restart
 
 ## 訪問網站
 
-現在，您可以通過瀏覽器訪問該網站，例如：http://static-file-server.tinkink.net
+現在，您可以通過瀏覽器訪問該網站，例如：`http://static-file-server.tinkink.net`
 
 ## 權限
 

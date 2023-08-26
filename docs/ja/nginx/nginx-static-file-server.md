@@ -65,7 +65,7 @@ sudo service nginx restart
 
 ## サイトにアクセスする
 
-これで、ブラウザを通じてサイトにアクセスできます。例：http://static-file-server.tinkink.net
+これで、ブラウザを通じてサイトにアクセスできます。例：`http://static-file-server.tinkink.net`
 
 ## 権限
 

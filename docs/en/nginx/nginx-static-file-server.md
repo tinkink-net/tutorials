@@ -65,7 +65,7 @@ sudo service nginx restart
 
 ## Access the Site
 
-Now you can access the site through the browser, for example: http://static-file-server.tinkink.net
+Now you can access the site through the browser, for example: `http://static-file-server.tinkink.net`
 
 ## Permissions
 

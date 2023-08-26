@@ -65,7 +65,7 @@ sudo service nginx restart
 
 ## Auf die Website zugreifen
 
-Jetzt können Sie über den Browser auf die Website zugreifen, zum Beispiel: http://static-file-server.tinkink.net
+Jetzt können Sie über den Browser auf die Website zugreifen, zum Beispiel: `http://static-file-server.tinkink.net`
 
 ## Berechtigungen
 
