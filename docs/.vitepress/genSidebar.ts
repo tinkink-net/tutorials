@@ -64,7 +64,7 @@ const genItems = function (topicPath: string, folderPath?: string): DefaultTheme
             if (childFilename === 'index.md') {
                 ret.unshift({
                     text: getTitle(childFullPath),
-                    link: childRewritePath,
+                    link: childRewritePath.replace(/\/index\.md$/, '/'),
                 })
                 return;
             }
