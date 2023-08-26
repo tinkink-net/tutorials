@@ -10,7 +10,6 @@
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | 開発者向けのMacチュートリアルで、Apple SiliconチップのMacbookでDockerをインストールする方法などがあります。 |
 | [Git](git/git-using-different-config-in-different-projects.html) | Gitの高度なトピックで、異なるプロジェクトで異なる設定を使用する方法などがあります。 |
 | [Mysql](mysql/most-used-sql-commands.html) | 文字セットと照合順序、最もよく使用されるコマンドなど、Mysqlのトピックがあります。 |
-
 | [Nginx](nginx/nginx-https-config.html) | Nginxの設定に関するさまざまな「方法」のトピック、逆プロキシ、静的ファイルサーバー、Webソケットプロキシなど。 |
 | [Vscode](vscode/copilot-usage-and-shortcut.html) | Vscodeに関連するトピック、Github Copilotの使用方法、タイムラインの使用方法など。 |
 | [Media](media/convert-compress-video-via-ffmpeg.html) | 動画ファイルの変換や圧縮方法など、メディアに関連するトピック。 |

@@ -10,7 +10,6 @@
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | 面向开发人员的Mac教程，如如何在苹果芯片的Macbook上安装Docker。 |
 | [Git](git/git-using-different-config-in-different-projects.html) | Git的高级主题，如如何在不同项目中使用不同的配置。 |
 | [Mysql](mysql/most-used-sql-commands.html) | Mysql主题，如字符集和校对规则、最常用的命令。 |
-
 | [Nginx](nginx/nginx-https-config.html) | 各种关于Nginx配置的“如何”主题，例如反向代理、静态文件服务器、WebSocket代理。 |
 | [Vscode](vscode/copilot-usage-and-shortcut.html) | 与Vscode相关的主题，例如如何使用Github Copilot，如何使用时间线。 |
 | [Media](media/convert-compress-video-via-ffmpeg.html) | 媒体相关的主题，例如如何转换或压缩视频文件。 |
