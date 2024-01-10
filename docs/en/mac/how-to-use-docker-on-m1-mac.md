@@ -1,4 +1,4 @@
-# Using Docker on Silicon chip (M1/M2) Mac computers
+# Using Docker on Silicon chip (M1/M2/M3) Mac computers
 
 <Validator lang="en" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
@@ -8,7 +8,7 @@ Apple officially released computers with its own chip, Apple Silicon, in 2020, a
 
 To solve the problem of software incompatibility caused by the change in CPU architecture, Apple included Rosetta 2 in MacOS, which translates APP code. This software translates x86 architecture code to ARM architecture code at runtime, allowing most software to run seamlessly on MacOS with the new chips.
 
-While most software already runs well on Apple Silicon (M1/M2) chips, there is one particular class of software that has not been able to run smoothly - virtualization software. This includes software such as virtual machines and Docker.
+While most software already runs well on Apple Silicon (M1/M2/M3) chips, there is one particular class of software that has not been able to run smoothly - virtualization software. This includes software such as virtual machines and Docker.
 
 Classic virtual machine software such as VirtualBox explicitly states that there are no support plans. And while Parallels Desktop does support it, the price is prohibitive.
 

@@ -1,4 +1,4 @@
-# 在蘋果Silicon芯片（M1/M2）Mac電腦上使用Docker
+# 在蘋果Silicon芯片（M1/M2/M3）Mac電腦上使用Docker
 
 <Validator lang="zh-hans" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
@@ -8,7 +8,7 @@
 
 爲了解決 CPU 架構變更帶來的軟件不兼容問題，蘋果在 MacOS 中附帶了用了轉譯 APP 代碼的 Rosetta 2 。這個軟件可以在運行時將 x86 架構的代碼轉譯爲 ARM 架構的代碼，從而使得大部分軟件無縫地運行在搭載新芯片的 MacOS 上。
 
-儘管大部分的軟件已經可以在 Apple Silicon （M1/M2）芯片上正常運行，但有一類特殊的軟件卻一直無法很順利地運行——虛擬化軟件。這包括虛擬機和 Docker 之類的軟件。
+儘管大部分的軟件已經可以在 Apple Silicon （M1/M2/M3）芯片上正常運行，但有一類特殊的軟件卻一直無法很順利地運行——虛擬化軟件。這包括虛擬機和 Docker 之類的軟件。
 
 經典的虛擬機軟件如 VirtualBox 明確表示沒有支持計劃。而 Parallels Desktop 雖然支持，但價格讓人望而生畏。
 

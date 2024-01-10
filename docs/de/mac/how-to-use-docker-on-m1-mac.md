@@ -1,4 +1,4 @@
-# Verwendung von Docker auf Silicon-Chip (M1/M2) Mac-Computern
+# Verwendung von Docker auf Silicon-Chip (M1/M2/M3) Mac-Computern
 
 <Validator lang="de" :platform-list="['macOS 13.2.1']" date="2023-03-14" />
 
@@ -8,7 +8,7 @@ Apple hat im Jahr 2020 offiziell Computer mit eigenem Chip, dem Apple Silicon, v
 
 Um das Problem der Softwareinkompatibilität aufgrund der Änderung der CPU-Architektur zu lösen, hat Apple Rosetta 2 in MacOS integriert, das den APP-Code übersetzt. Diese Software übersetzt x86-Architekturcode zur Laufzeit in ARM-Architekturcode und ermöglicht es den meisten Softwareprogrammen, nahtlos auf MacOS mit den neuen Chips zu laufen.
 
-Während die meisten Softwareprogramme bereits gut auf Apple Silicon (M1/M2) Chips laufen, gibt es eine bestimmte Art von Software, die nicht reibungslos ausgeführt werden kann - Virtualisierungssoftware. Hierzu gehören Softwareprogramme wie virtuelle Maschinen und Docker.
+Während die meisten Softwareprogramme bereits gut auf Apple Silicon (M1/M2/M3) Chips laufen, gibt es eine bestimmte Art von Software, die nicht reibungslos ausgeführt werden kann - Virtualisierungssoftware. Hierzu gehören Softwareprogramme wie virtuelle Maschinen und Docker.
 
 Klassische Virtualisierungssoftware wie VirtualBox geben explizit an, dass es keine Unterstützungspläne gibt. Und obwohl Parallels Desktop dies unterstützt, ist der Preis abschreckend.
 
