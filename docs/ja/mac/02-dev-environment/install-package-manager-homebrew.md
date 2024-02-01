@@ -62,7 +62,7 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebr
 brew install node
 ```
 
-> Node.jsのインストール方法については、[こちら](/en/mac/install-nodejs.md)をご覧ください。
+> Node.jsのインストール方法については、[こちら](/ja/mac/install-nodejs.md)をご覧ください。
 
 ソフトウェアパッケージをアンインストールするために、`brew uninstall`コマンドを使用することができます：
 

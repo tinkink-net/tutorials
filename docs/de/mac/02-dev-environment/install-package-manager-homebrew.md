@@ -62,7 +62,7 @@ Sie können den `brew`-Befehl verwenden, um Softwarepakete zu installieren. Zum 
 brew install node
 ```
 
-> Wir haben ein weiteres Tutorial zur Installation von Node.js. Sie können es [hier](/en/mac/install-nodejs.md) lesen.
+> Wir haben ein weiteres Tutorial zur Installation von Node.js. Sie können es [hier](/de/mac/install-nodejs.html) lesen.
 
 Sie können den `brew uninstall`-Befehl verwenden, um ein Softwarepaket zu deinstallieren:
 

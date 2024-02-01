@@ -62,7 +62,7 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebr
 brew install node
 ```
 
-> 我们还有另一个关于如何安装 Node.js 的教程。您可以在[这里](/en/mac/install-nodejs.md)阅读。
+> 我们还有另一个关于如何安装 Node.js 的教程。您可以在[这里](/zh-hans/mac/install-nodejs.md)阅读。
 
 您可以使用 `brew uninstall` 命令来卸载软件包：
 
