@@ -1,5 +1,9 @@
 # How to update glibc
 
+::: warning
+This article is under review, and may contain errors or inaccuracies. Please read with caution, and welcome to provide feedback.
+:::
+
 ## Background
 
 The GNU C Library (glibc) is the standard C library for the GNU system. It is the main library for the GNU system and is used by most programs on GNU/Linux systems. It provides the basic routines for allocating memory, searching directories, opening and closing files, reading and writing files, string handling, pattern matching, arithmetic, and so on.

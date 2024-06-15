@@ -1,5 +1,9 @@
 # 如何更新glibc
 
+::: warning
+This article is under review, and may contain errors or inaccuracies. Please read with caution, and welcome to provide feedback.
+:::
+
 ## 背景
 
 GNU C庫（glibc）是GNU系統的標準C庫。它是GNU系統的主要庫，GNU/Linux系統的大多數程序都使用它。它提供了分配內存、搜索目錄、打開和關閉文件、讀寫文件、字符串處理、模式匹配、算術等基本程序。

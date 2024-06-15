@@ -1,5 +1,9 @@
 # glibcの更新方法
 
+::: warning
+This article is under review, and may contain errors or inaccuracies. Please read with caution, and welcome to provide feedback.
+:::
+
 ## 背景
 
 GNU C Library (glibc) は、GNUシステム用の標準Cライブラリです。GNUシステムの主要なライブラリであり、GNU/Linuxシステム上のほとんどのプログラムで使用されています。メモリの割り当て、ディレクトリの検索、ファイルのオープンとクローズ、ファイルの読み書き、文字列の処理、パターンマッチング、算術などの基本的なルーチンを提供します。

@@ -1,5 +1,9 @@
 # Wie man glibc aktualisiert
 
+::: warning
+This article is under review, and may contain errors or inaccuracies. Please read with caution, and welcome to provide feedback.
+:::
+
 ## Hintergrund
 
 Die GNU C Library (glibc) ist die Standard-C-Bibliothek für das GNU-System. Sie ist die Hauptbibliothek für das GNU-System und wird von den meisten Programmen auf GNU/Linux-Systemen verwendet. Sie bietet die grundlegenden Routinen zum Zuweisen von Speicher, zum Durchsuchen von Verzeichnissen, zum Öffnen und Schließen von Dateien, zum Lesen und Schreiben von Dateien, zur Zeichenkettenverarbeitung, zum Musterabgleich, zur Arithmetik usw.
