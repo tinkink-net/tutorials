@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --no-optional --store=node_modules/.pnpm-store || echo skipping pnpm install",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev docs",
     "preview": "vitepress preview docs",
