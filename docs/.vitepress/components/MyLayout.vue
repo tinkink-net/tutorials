@@ -2,6 +2,7 @@
     <Layout>
         <template #aside-outline-after>
             <AdSense />
+            <MyAd />
         </template>
     </Layout>
 </template>
@@ -14,6 +15,9 @@ const AdSense = defineClientComponent(() => {
     return import('./AdSense.vue');
 })
 
-
+const MyAd = defineClientComponent(() => {
+    return import('./MyAd.vue');
+})
+import { useData } from 'vitepress'
 const { Layout } = DefaultTheme;
 </script>
