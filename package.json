@@ -18,7 +18,7 @@
   "devDependencies": {
     "dotenv": "^16.0.3",
     "minimist": "^1.2.8",
-    "vitepress": "1.0.0-rc.4"
+    "vitepress": "^1.0.0"
   },
   "optionalDependencies": {
     "opencc": "^1.1.3"
