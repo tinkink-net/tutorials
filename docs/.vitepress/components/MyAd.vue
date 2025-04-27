@@ -2,7 +2,7 @@
     <div class="my-ad">
         <h2>✉️ Discover TinkMail</h2>
         <p>Powerful email solutions for personal and business use</p>
-        <a target="_blank" href="https://tinkmail.me" class="cta-button">Get Started Free</a>
+        <a target="_blank" href="https://tinkmail.me/?utm_source=tutorials" class="cta-button">Get Started Free</a>
     </div>
 </template>
 
