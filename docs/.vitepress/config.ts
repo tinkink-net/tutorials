@@ -4,6 +4,271 @@ import genSidebar from './genSidebar';
 const DOMAIN = 'https://tutorials.tinkink.net';
 const GITHUB = 'https://github.com/tinkink-net/tutorials';
 
+// Navigation interfaces
+interface NavTextTranslations {
+    en: string;
+    'zh-hans': string;
+    'zh-hant': string;
+    ja: string;
+    de: string;
+}
+
+interface NavItem {
+    text: NavTextTranslations;
+    link: string;
+    activeMatch?: string;
+}
+
+interface NavItemWithChildren {
+    text: NavTextTranslations;
+    items: NavItem[];
+    activeMatch?: string;
+}
+
+type RootNavItem = NavItem | NavItemWithChildren;
+
+// Centralized navigation data
+const navItems: RootNavItem[] = [
+    {
+        text: {
+            en: 'Tinkink',
+            'zh-hans': 'Tinkink',
+            'zh-hant': 'Tinkink',
+            ja: 'Tinkink',
+            de: 'Tinkink'
+        },
+        link: 'https://tinkink.net',
+    },
+    {
+        text: {
+            en: 'Home',
+            'zh-hans': '首页',
+            'zh-hant': '首頁',
+            ja: 'ホーム',
+            de: 'Startseite'
+        },
+        link: '/:lang/'
+    },
+    {
+        text: {
+            en: 'Dev Tools',
+            'zh-hans': '开发工具',
+            'zh-hant': '開發工具',
+            ja: '開発ツール',
+            de: 'Entwicklungswerkzeuge'
+        },
+        items: [
+            {
+                text: {
+                    en: 'Git',
+                    'zh-hans': 'Git',
+                    'zh-hant': 'Git',
+                    ja: 'Git',
+                    de: 'Git'
+                },
+                link: '/:lang/git/git-using-different-config-in-different-projects.html',
+                activeMatch: '/:lang/git/'
+            },
+            {
+                text: {
+                    en: 'VSCode',
+                    'zh-hans': 'VSCode',
+                    'zh-hant': 'VSCode',
+                    ja: 'VSCode',
+                    de: 'VSCode'
+                },
+                link: '/:lang/vscode/copilot-usage-and-shortcut.html',
+                activeMatch: '/:lang/vscode/'
+            }
+        ]
+    },
+    {
+        text: {
+            en: 'Databases',
+            'zh-hans': '数据库',
+            'zh-hant': '資料庫',
+            ja: 'データベース',
+            de: 'Datenbanken'
+        },
+        items: [
+            {
+                text: {
+                    en: 'MySQL',
+                    'zh-hans': 'MySQL',
+                    'zh-hant': 'MySQL',
+                    ja: 'MySQL',
+                    de: 'MySQL'
+                },
+                link: '/:lang/mysql/most-used-sql-commands.html',
+                activeMatch: '/:lang/mysql/'
+            },
+            {
+                text: {
+                    en: 'SQLite',
+                    'zh-hans': 'SQLite',
+                    'zh-hant': 'SQLite',
+                    ja: 'SQLite',
+                    de: 'SQLite'
+                },
+                link: '/:lang/sqlite/deal-with-date-time-type-in-sqlite.html',
+                activeMatch: '/:lang/sqlite/'
+            }
+        ]
+    },
+    {
+        text: {
+            en: 'DevOps',
+            'zh-hans': 'DevOps',
+            'zh-hant': 'DevOps',
+            ja: 'DevOps',
+            de: 'DevOps'
+        },
+        items: [
+            {
+                text: {
+                    en: 'Nginx',
+                    'zh-hans': 'Nginx',
+                    'zh-hant': 'Nginx',
+                    ja: 'Nginx',
+                    de: 'Nginx'
+                },
+                link: '/:lang/nginx/nginx-https-config.html',
+                activeMatch: '/:lang/nginx/'
+            }
+        ]
+    },
+    /* {
+        text: {
+            en: 'Web & Apps',
+            'zh-hans': '网站与应用',
+            'zh-hant': '網站與應用',
+            ja: 'ウェブ & アプリ',
+            de: 'Web & Apps'
+        },
+        items: []
+    }, */
+    {
+        text: {
+            en: 'OS & Tools',
+            'zh-hans': '系统与工具',
+            'zh-hant': '系統與工具',
+            ja: 'オペレーティングシステムとツール',
+            de: 'Betriebssysteme & Werkzeuge'
+        },
+        items: [
+            {
+                text: {
+                    en: 'Linux',
+                    'zh-hans': 'Linux',
+                    'zh-hant': 'Linux',
+                    ja: 'Linux',
+                    de: 'Linux'
+                },
+                link: '/:lang/linux/',
+                activeMatch: '/:lang/linux/'
+            },
+            {
+                text: {
+                    en: 'Mac',
+                    'zh-hans': 'Mac',
+                    'zh-hant': 'Mac',
+                    ja: 'Mac',
+                    de: 'Mac'
+                },
+                link: '/:lang/mac/how-to-use-docker-on-m1-mac.html',
+                activeMatch: '/:lang/mac/'
+            },
+            {
+                text: {
+                    en: 'Media',
+                    'zh-hans': '媒体',
+                    'zh-hant': '媒體',
+                    ja: 'メディア',
+                    de: 'Medien'
+                },
+                link: '/:lang/media/convert-compress-video-via-ffmpeg.html',
+                activeMatch: '/:lang/media/'
+            }
+        ]
+    },
+    {
+        text: {
+            en: 'AI',
+            'zh-hans': 'AI',
+            'zh-hant': 'AI',
+            ja: 'AI',
+            de: 'KI'
+        },
+        items: [
+            {
+                text: {
+                    en: 'ChatAI',
+                    'zh-hans': 'ChatAI',
+                    'zh-hant': 'ChatAI',
+                    ja: 'ChatAI',
+                    de: 'ChatAI'
+                },
+                link: '/:lang/chatgpt/chatgpt-usage.html',
+                activeMatch: '/:lang/chatgpt/'
+            },
+            {
+                text: {
+                    en: 'AI Coding',
+                    'zh-hans': 'AI 编程',
+                    'zh-hant': 'AI 編程',
+                    ja: 'AI コーディング',
+                    de: 'AI-Codierung'
+                },
+                link: '/:lang/ai-coding/ai-coding-usage.html',
+                activeMatch: '/:lang/ai-coding/'
+            }
+        ]
+    }
+];
+
+/**
+ * Universal function to translate NavTextTranslations to the target language
+ * and replace :lang placeholder in links with the actual language
+ * @param item Any object containing NavTextTranslations or strings with :lang placeholder
+ * @param lang Target language
+ * @returns Processed object with translated text and replaced links
+ */
+function processTranslations<T extends Object>(item: T, lang: string): any {
+    if (!item || typeof item !== 'object') {
+        return item;
+    }
+
+    // Create a new object to avoid mutating the original
+    const processed: any = Array.isArray(item) ? [] : {};
+
+    for (const [key, value] of Object.entries(item)) {
+        if (key === 'text' && value && typeof value === 'object' && !Array.isArray(value)) {
+            // Handle text translation
+            const textTranslations = value as NavTextTranslations;
+            processed[key] = textTranslations[lang as keyof NavTextTranslations] || textTranslations['en'];
+        } else if (key === 'link' || key === 'activeMatch') {
+            // Replace :lang with the actual language
+            processed[key] = typeof value === 'string' ? value.replace(':lang', lang) : value;
+        } else if (key === 'items' && Array.isArray(value)) {
+            // Process array of items
+            processed[key] = value.map(subItem => processTranslations(subItem, lang));
+        } else if (typeof value === 'object') {
+            // Process nested objects recursively
+            processed[key] = processTranslations(value, lang);
+        } else {
+            // Keep other properties as is
+            processed[key] = value;
+        }
+    }
+
+    return processed;
+}
+
+// Function to generate navigation for a specific language
+function getNav(lang: string) {
+    return processTranslations(navItems, lang);
+}
+
 export default defineConfig({
     locales: {
         en: {
@@ -13,18 +278,7 @@ export default defineConfig({
             description: 'Tutorials of common development tools',
             link: '/en/',
             themeConfig: {
-                nav: [
-                    { text: 'Tinkink', link: 'https://tinkink.net' },
-                    { text: 'Home', link: '/en/' },
-                    { text: 'Linux', link: '/en/linux/', activeMatch: '/en/linux/' },
-                    { text: 'Mac', link: '/en/mac/how-to-use-docker-on-m1-mac.html', activeMatch: '/en/mac/' },
-                    { text: 'Git', link: '/en/git/git-using-different-config-in-different-projects.html', activeMatch: '/en/git/' },
-                    { text: 'MySQL', link: '/en/mysql/most-used-sql-commands.html', activeMatch: '/en/mysql/' },
-                    { text: 'SQLite', link: '/en/sqlite/deal-with-date-time-type-in-sqlite.html', activeMatch: '/en/sqlite/' },
-                    { text: 'Nginx', link: '/en/nginx/nginx-https-config.html', activeMatch: '/en/nginx/' },
-                    { text: 'VSCode', link: '/en/vscode/copilot-usage-and-shortcut.html', activeMatch: '/en/vscode/' },
-                    { text: 'Media', link: '/en/media/convert-compress-video-via-ffmpeg.html', activeMatch: '/en/media/' },
-                ],
+                nav: getNav('en'),
                 editLink: {
                     text: 'Help improve this page',
                     pattern: GITHUB + '/edit/master/docs/:path',
@@ -38,18 +292,7 @@ export default defineConfig({
             description: '常用开发工具教程',
             link: '/zh-hans/',
             themeConfig: {
-                nav: [
-                    { text: 'Tinkink', link: 'https://tinkink.net' },
-                    { text: '首页', link: '/zh-hans/' },
-                    { text: 'Linux', link: '/zh-hans/linux/', activeMatch: '/zh-hans/linux/' },
-                    { text: 'Mac', link: '/zh-hans/mac/how-to-use-docker-on-m1-mac.html', activeMatch: '/zh-hans/mac/' },
-                    { text: 'Git', link: '/zh-hans/git/git-using-different-config-in-different-projects.html', activeMatch: '/zh-hans/git/' },
-                    { text: 'MySQL', link: '/zh-hans/mysql/most-used-sql-commands.html', activeMatch: '/zh-hans/mysql/' },
-                    { text: 'SQLite', link: '/zh-hans/sqlite/deal-with-date-time-type-in-sqlite.html', activeMatch: '/zh-hans/sqlite/' },
-                    { text: 'Nginx', link: '/zh-hans/nginx/nginx-https-config.html', activeMatch: '/zh-hans/nginx/' },
-                    { text: 'VSCode', link: '/zh-hans/vscode/copilot-usage-and-shortcut.html', activeMatch: '/zh-hans/vscode/' },
-                    { text: '媒体', link: '/zh-hans/media/convert-compress-video-via-ffmpeg.html', activeMatch: '/zh-hans/media/' },
-                ],
+                nav: getNav('zh-hans'),
                 editLink: {
                     text: '协助改进本页面',
                     pattern: GITHUB + '/edit/master/docs/:path',
@@ -63,18 +306,7 @@ export default defineConfig({
             description: '常用開發工具教程',
             link: '/zh-hant/',
             themeConfig: {
-                nav: [
-                    { text: 'Tinkink', link: 'https://tinkink.net' },
-                    { text: '首頁', link: '/zh-hant/' },
-                    { text: 'Linux', link: '/zh-hant/linux/', activeMatch: '/zh-hant/linux/' },
-                    { text: 'Mac', link: '/zh-hant/mac/how-to-use-docker-on-m1-mac.html', activeMatch: '/zh-hant/mac/' },
-                    { text: 'Git', link: '/zh-hant/git/git-using-different-config-in-different-projects.html', activeMatch: '/zh-hant/git/' },
-                    { text: 'MySQL', link: '/zh-hant/mysql/most-used-sql-commands.html', activeMatch: '/zh-hant/mysql/' },
-                    { text: 'SQLite', link: '/zh-hant/sqlite/deal-with-date-time-type-in-sqlite.html', activeMatch: '/zh-hant/sqlite/' },
-                    { text: 'Nginx', link: '/zh-hant/nginx/nginx-https-config.html', activeMatch: '/zh-hant/nginx/' },
-                    { text: 'VSCode', link: '/zh-hant/vscode/copilot-usage-and-shortcut.html', activeMatch: '/zh-hant/vscode/' },
-                    { text: '媒體', link: '/zh-hant/media/convert-compress-video-via-ffmpeg.html', activeMatch: '/zh-hant/media/' },
-                ],
+                nav: getNav('zh-hant'),
                 editLink: {
                     text: '協助改進本頁面',
                     pattern: GITHUB + '/edit/master/docs/:path',
@@ -88,18 +320,7 @@ export default defineConfig({
             description: 'よく使う開発ツールのチュートリアル',
             link: '/ja/',
             themeConfig: {
-                nav: [
-                    { text: 'Tinkink', link: 'https://tinkink.net' },
-                    { text: 'ホーム', link: '/ja/' },
-                    { text: 'Linux', link: '/ja/linux/', activeMatch: '/ja/linux/' },
-                    { text: 'Mac', link: '/ja/mac/how-to-use-docker-on-m1-mac.html', activeMatch: '/ja/mac/' },
-                    { text: 'Git', link: '/ja/git/git-using-different-config-in-different-projects.html', activeMatch: '/ja/git/' },
-                    { text: 'MySQL', link: '/ja/mysql/most-used-sql-commands.html', activeMatch: '/ja/mysql/' },
-                    { text: 'SQLite', link: '/ja/sqlite/deal-with-date-time-type-in-sqlite.html', activeMatch: '/ja/sqlite/' },
-                    { text: 'Nginx', link: '/ja/nginx/nginx-https-config.html', activeMatch: '/ja/nginx/' },
-                    { text: 'VSCode', link: '/ja/vscode/copilot-usage-and-shortcut.html', activeMatch: '/ja/vscode/' },
-                    { text: 'メディア', link: '/ja/media/convert-compress-video-via-ffmpeg.html', activeMatch: '/ja/media/' },
-                ],
+                nav: getNav('ja'),
                 editLink: {
                     text: 'このページを改善するのを手伝ってください',
                     pattern: GITHUB + '/edit/master/docs/:path',
@@ -113,18 +334,7 @@ export default defineConfig({
             description: 'Tutorials von gängigen Entwicklungstools',
             link: '/de/',
             themeConfig: {
-                nav: [
-                    { text: 'Tinkink', link: 'https://tinkink.net' },
-                    { text: 'Startseite', link: '/de/' },
-                    { text: 'Linux', link: '/de/linux/', activeMatch: '/de/linux/' },
-                    { text: 'Mac', link: '/de/mac/how-to-use-docker-on-m1-mac.html', activeMatch: '/de/mac/' },
-                    { text: 'Git', link: '/de/git/git-using-different-config-in-different-projects.html', activeMatch: '/de/git/' },
-                    { text: 'MySQL', link: '/de/mysql/most-used-sql-commands.html', activeMatch: '/de/mysql/' },
-                    { text: 'SQLite', link: '/de/sqlite/deal-with-date-time-type-in-sqlite.html', activeMatch: '/de/sqlite/' },
-                    { text: 'Nginx', link: '/de/nginx/nginx-https-config.html', activeMatch: '/de/nginx/' },
-                    { text: 'VSCode', link: '/de/vscode/copilot-usage-and-shortcut.html', activeMatch: '/de/vscode/' },
-                    { text: 'Medien', link: '/de/media/convert-compress-video-via-ffmpeg.html', activeMatch: '/de/media/' },
-                ],
+                nav: getNav('de'),
                 editLink: {
                     text: 'Helfen Sie, diese Seite zu verbessern',
                     pattern: GITHUB + '/edit/master/docs/:path',
@@ -147,6 +357,7 @@ export default defineConfig({
         socialLinks: [
             { icon: 'github', link: GITHUB },
             { icon: 'twitter', link: 'https://twitter.com/tinkink_net' },
+            { icon: 'discord', link: 'https://discord.gg/pVqVKDae' },
         ]
     },
     transformHead(context) {
