@@ -1,6 +1,7 @@
-const openAiBaseUrl = process.env.OPENAI_BASEURL || 'https://api.openai.com';
+let openAiBaseUrl;
+const chunkSize = 100000;
 
-function splitContent(content, limit = 1300) {
+function splitContent(content, limit = chunkSize) {
     // split markdown content into chunks
     // split point is headings
     const lines = content.split('\n');
@@ -45,8 +46,10 @@ async function translateChunk(from, to, text, headers) {
     const messages = [
         {
             role: 'system',
-            // You are a language translate, when you receive messages in English, just translate it to Chinese and reply.If following words appear, please translate like this: FT -> 富途, Apple-> 某果, Tencent -> 鹅厂
-            content: `You are a Markdown doc translator, when you receive a Markdown doc in ${from}, just translate it to ${to} and reply back. Don't add any explanation or other words. Don't omit any details, and keep the original Markdown format, including the front matter.Inline code blocks such as \`code\` and \`\`\` wrapped code blocks should keep unchanged, any content inside a code block should not be translated.`,
+            content: `You are a Markdown doc translator, when you receive a Markdown doc in ${from}, just translate it to ${to} and reply back.
+            Don't add any explanation or other words. Don't omit any details, and keep the original Markdown format, including the front matter.
+            Inline code blocks such as \`code\` and \`\`\` wrapped code blocks should keep unchanged, any content inside a code block should not be translated.
+            You can keep some well-known words in English, such as "GitHub", "VSCode", "Copilot", "AI", "ChatGPT" and so on.`,
         },
         {
             role: 'user',
@@ -55,7 +58,7 @@ async function translateChunk(from, to, text, headers) {
     ];
 
     const body = {
-        model: 'gpt-3.5-turbo',
+        model: 'anthropic/claude-3.7-sonnet',
         temperature: 0.1,
         stream: false,
         messages: messages,
@@ -73,9 +76,9 @@ async function translateChunk(from, to, text, headers) {
 
     while (tryTimes > 0) {
 
-        rawResponse = await fetch(openAiBaseUrl + '/v1/chat/completions', options);
+        rawResponse = await fetch(openAiBaseUrl + '/chat/completions', options);
+        // console.log('response status:' + rawResponse.status);
         response = await rawResponse.json();
-        console.log(response);
 
         if (response.error) {
             tryTimes--;
@@ -89,6 +92,13 @@ async function translateChunk(from, to, text, headers) {
 
 
 export async function translate(from, to, text) {
+    if (!openAiBaseUrl)  {
+        openAiBaseUrl = process.env.OPENAI_BASEURL;
+    }
+    if (!openAiBaseUrl) {
+        throw new Error('OPENAI_BASEURL is not set');
+    }
+
     const headers = {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${process.env.OPENAI_KEY}`,

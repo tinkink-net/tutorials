@@ -1,18 +1,16 @@
-import OpenCC from 'opencc';
+import path from 'path';
 import minimist from 'minimist';
 import { getAllDocs, getDocContent, writeDocContent } from './docs.mjs';
 import { translate } from './openai.mjs';
 import * as dotenv from 'dotenv';
 
-dotenv.config();
-
-const opencc = new OpenCC('s2t.json');
+dotenv.config({
+    path: path.resolve(process.cwd(), './.env'),
+    override: true,
+});
 
 const argv = minimist(process.argv.slice(2));
-
-const convertToHant = (text) => {
-    return opencc.convertSync(text);
-};
+const overwrite = argv.overwrite || false;
 
 const convertContent = async (content, from, to) => {
 
@@ -31,12 +29,7 @@ const convertContent = async (content, from, to) => {
 
     // replace validator lang
     content = content.replace(/lang="(.*?)"/g, 'lang="' + to + '"');
-
-    if (to === 'zh-hant') {
-        return convertToHant(content);
-    } else {
-        return translate(langMap[from], langMap[to], content);
-    }
+    return translate(langMap[from], langMap[to], content);
 };
 
 const convertDoc = async (doc, from, to) => {
@@ -45,8 +38,12 @@ const convertDoc = async (doc, from, to) => {
     try {
         const existingContent = await getDocContent(to, doc);
         if (existingContent) {
-            console.log(`  Skipping, already exists.`);
-            return;
+            if (!overwrite) {
+                console.log(`  Skipping, already exists.`);
+                return;
+            } else {
+                console.log(`  Overwriting existing file.`);
+            }
         }
     } catch {
         // ignore
