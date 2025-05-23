@@ -191,7 +191,7 @@ const navItems: RootNavItem[] = [
             }
         ]
     },
-    {
+    /* {
         text: {
             en: 'AI',
             'zh-hans': 'AI',
@@ -223,7 +223,7 @@ const navItems: RootNavItem[] = [
                 activeMatch: '/:lang/ai-coding/'
             }
         ]
-    }
+    } */
 ];
 
 /**
