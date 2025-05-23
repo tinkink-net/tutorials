@@ -43,7 +43,11 @@ If you only check the Git commit record, you'll be able to see the Git commit hi
 
 If a file is deleted by mistake, it won't be displayed, opened, or found in the TIMELINE panel in VSCode. But in fact, although the file has been deleted by mistake, its historical version is still present locally.
 
-We can find any version of any file in the same project, and then open the selected version file in the File Manager by right-clicking on it, so that we can find the folder where VSCode keeps the history versions. On a Mac system, for example, the path is as follows.
+To retrieve the deleted file, you can simply create a new file with the same name in the same directory, and then open the TIMELINE panel. The deleted file will appear in the TIMELINE panel, and you can restore it by right-clicking on it.
+
+That's it! The deleted file is restored. But if you don't remember the name of the file you deleted, it can be a bit tricky to find it.
+
+We can first find a file, any version of any file in the same project is fine. And then open the selected version file in the File Manager by right-clicking on it, so that we can find the folder where VSCode keeps the history versions. On a Mac system, for example, the path is as follows.
 
 ```
 /Users/xxx/Library/Application Support/Code/User/History/61e8902

@@ -42,9 +42,13 @@ Wenn Sie nur die Git-Commit-Aufzeichnung überprüfen, können Sie die Git-Commi
 
 ## Wiederherstellen versehentlich gelöschter Dateien
 
-Wenn eine Datei versehentlich gelöscht wird, wird sie in VSCode nicht angezeigt, geöffnet oder im TIMELINE-Panel gefunden. Tatsächlich ist jedoch trotz des versehentlichen Löschens die historische Version der Datei lokal noch vorhanden.
+Wenn eine Datei versehentlich gelöscht wird, wird sie in VSCode nicht mehr angezeigt, geöffnet oder im TIMELINE-Panel gefunden. Aber tatsächlich ist, obwohl die Datei versehentlich gelöscht wurde, ihre historische Version immer noch lokal vorhanden.
 
-Wir können jede Version einer beliebigen Datei im selben Projekt finden und dann die ausgewählte Version im Dateimanager öffnen, indem wir mit der rechten Maustaste darauf klicken. Dadurch können wir den Ordner finden, in dem VSCode die Versionshistorie speichert. Auf einem Mac-System lautet der Pfad zum Beispiel wie folgt.
+Um die gelöschte Datei wiederherzustellen, können Sie einfach eine neue Datei mit demselben Namen im selben Verzeichnis erstellen und dann das TIMELINE-Panel öffnen. Die gelöschte Datei wird im TIMELINE-Panel erscheinen, und Sie können sie durch Rechtsklick darauf wiederherstellen.
+
+Das war's! Die gelöschte Datei ist wiederhergestellt. Aber wenn Sie sich nicht an den Namen der gelöschten Datei erinnern, kann es etwas schwierig sein, sie zu finden.
+
+Wir können zuerst eine Datei finden, jede Version jeder Datei im selben Projekt ist in Ordnung. Und dann öffnen wir die ausgewählte Versionsdatei im Dateimanager durch Rechtsklick darauf, sodass wir den Ordner finden können, in dem VSCode die Versionshistorie aufbewahrt. Auf einem Mac-System ist der Pfad zum Beispiel wie folgt.
 
 ```
 /Users/xxx/Library/Application Support/Code/User/History/61e8902
