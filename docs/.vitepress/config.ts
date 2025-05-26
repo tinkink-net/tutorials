@@ -350,6 +350,9 @@ export default defineConfig({
     ],
     outDir: '../dist',
     lastUpdated: true,
+    sitemap: {
+        hostname: DOMAIN,
+    },
     themeConfig: {
         i18nRouting: true,
         logo: '/assets/logo.png',
