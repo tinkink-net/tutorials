@@ -62,7 +62,7 @@ You can use the `brew` command to install software packages. For example, you ca
 brew install node
 ```
 
-> We have another tutorial on how to install Node.js. You can read it [here](/de/mac/install-nodejs.md).
+> We have another tutorial on how to install Node.js. You can read it [here](/de/mac/install-nodejs.html).
 
 You can use the `brew uninstall` command to uninstall a software package:
 
