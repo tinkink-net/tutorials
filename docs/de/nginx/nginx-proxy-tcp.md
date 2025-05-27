@@ -2,7 +2,7 @@
 
 Sie wissen vielleicht, dass NGINX ein leistungsstarker Webserver und Reverse-Proxy-Server ist. Wir verwenden ihn, um HTTP-Anfragen zu bedienen, einschließlich statischer Dateien, dynamischer Inhalte und Reverse-Proxying zu Backend-Diensten. Er kann auch WebSocket-Verbindungen proxyen.
 
-> Falls Sie mit dem NGINX-Proxy nicht vertraut sind, lesen Sie bitte [Nginx-Konfiguration mit Node.js-Reverse-Proxy](//de/nginx/nginx-reverse-proxy-nodejs.html).
+> Falls Sie mit dem NGINX-Proxy nicht vertraut sind, lesen Sie bitte [Nginx-Konfiguration mit Node.js-Reverse-Proxy](/de/nginx/nginx-reverse-proxy-nodejs.html).
 
 NGINX kann jedoch auch als TCP-Proxy-Server verwendet werden, was für das Proxying von Nicht-HTTP-Protokollen wie MySQL, Redis und anderen TCP-basierten Diensten nützlich ist. Dieser Artikel führt Sie durch den Prozess der Konfiguration von NGINX als TCP-Proxy.
 
@@ -10,7 +10,7 @@ NGINX kann jedoch auch als TCP-Proxy-Server verwendet werden, was für das Proxy
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-- Ein Server mit installiertem NGINX. Sie können NGINX mit Ihrem Paketmanager installieren oder von der [offiziellen Website](https://nginx./de/en/download.html) herunterladen.
+- Ein Server mit installiertem NGINX. Sie können NGINX mit Ihrem Paketmanager installieren oder von der [offiziellen Website](https://nginx.org/en/download.html) herunterladen.
 - Grundkenntnisse der NGINX-Konfigurationsdateien und wie man sie bearbeitet.
 - Zugriff auf die NGINX-Konfigurationsdatei, die sich normalerweise unter `/etc/nginx/nginx.conf` oder `/etc/nginx/conf.d/default.conf` befindet.
 - Der TCP-Dienst, den Sie proxyen möchten (z.B. MySQL, Redis), sollte auf dem Server laufen und zugänglich sein.
@@ -209,5 +209,5 @@ Sie können NGINX als leistungsstarken TCP-Proxy-Server verwenden, um verschiede
 ## Zusätzliche Ressourcen
 
 - [NGINX-Dokumentation](https://nginx.org/en/docs/)
-- [NGINX Stream-Modul](https://nginx./de/en/docs/stream/ngx_stream_core_module.html)
-- [NGINX-Lastausgleich](https://nginx./de/en/docs/http/load_balancing.html)
+- [NGINX Stream-Modul](https://nginx.org/en/docs/stream/ngx_stream_core_module.html)
+- [NGINX-Lastausgleich](https://nginx.org/en/docs/http/load_balancing.html)

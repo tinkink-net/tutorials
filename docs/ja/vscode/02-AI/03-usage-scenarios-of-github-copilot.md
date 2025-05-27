@@ -4,7 +4,7 @@ Copilot (<https://copilot.github.com/>) は、コーディングプロセス中�
 
 しかし、あなたはCopilotをより多くの使用シナリオで使用できることを知っていますか？ Copilotは、テストケース、コメント、ドキュメント、数列、さらには翻訳を補完することもできます。この記事では、Copilotのより多くの使用シナリオを紹介します。
 
-> Copilotの基礎を知りたい場合は、[Github Copilotとショートカットの使用方法](/en/vscode/copilot-usage-and-shortcut.html)を参照してください。
+> Copilotの基礎を知りたい場合は、[Github Copilotとショートカットの使用方法](/ja/vscode/copilot-usage-and-shortcut.html)を参照してください。
 
 ## アルゴリズム問題を解決する
 

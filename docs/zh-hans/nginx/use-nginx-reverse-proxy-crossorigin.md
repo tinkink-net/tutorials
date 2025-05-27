@@ -50,7 +50,7 @@ server {
 }
 ```
 
-> 如果您对如何配置 Nginx 反向代理感兴趣，请参考[这篇文章](/en/nginx/nginx-reverse-proxy-nodejs.html)。
+> 如果您对如何配置 Nginx 反向代理感兴趣，请参考[这篇文章](/zh-hans/nginx/nginx-reverse-proxy-nodejs.html)。
 
 在这个例子中，我们允许来自任何域名（`*`）的跨域请求。如果您想限制只允许特定域名访问，可以将 `*` 替换为特定域名。
 

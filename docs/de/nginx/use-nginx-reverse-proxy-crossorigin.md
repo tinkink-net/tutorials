@@ -50,7 +50,7 @@ server {
 }
 ```
 
-> Wenn Sie daran interessiert sind, wie man einen Nginx Reverse Proxy konfiguriert, lesen Sie bitte [diesen Artikel](/en/nginx/nginx-reverse-proxy-nodejs.html).
+> Wenn Sie daran interessiert sind, wie man einen Nginx Reverse Proxy konfiguriert, lesen Sie bitte [diesen Artikel](/de/nginx/nginx-reverse-proxy-nodejs.html).
 
 In diesem Beispiel erlauben wir domainübergreifende Anfragen von jeder Domain (`*`). Sie können `*` durch eine bestimmte Domain ersetzen, wenn Sie den Zugriff nur auf diese Domain beschränken möchten.
 

@@ -40,7 +40,7 @@ Before you start using Dev Containers in VS Code, you need to ensure that you ha
 
 Dev Containers rely on Docker to create and manage container environments. You need to install Docker before using Dev Containers.
 
-> You can choose Docker Desktop (on Windows and macOS) or Docker Engine (on Linux) from [Docker's official website](https://www.docker.com/products/docker-desktop/). You can also use third-party Docker tools like OrbStack, refer to [Using Docker on Silicon chip (M1/M2/M3) Mac computers](/en/mac/02-dev-environment/how-to-use-docker-on-m1-mac.md) for more details.
+> You can choose Docker Desktop (on Windows and macOS) or Docker Engine (on Linux) from [Docker's official website](https://www.docker.com/products/docker-desktop/). You can also use third-party Docker tools like OrbStack, refer to [Using Docker on Silicon chip (M1/M2/M3) Mac computers](/en/mac/02-dev-environment/how-to-use-docker-on-m1-mac.html) for more details.
 
 
 **VS Code**

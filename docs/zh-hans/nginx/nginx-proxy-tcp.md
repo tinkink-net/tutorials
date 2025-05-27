@@ -2,7 +2,7 @@
 
 您可能已经知道 NGINX 是一个强大的 Web 服务器和反向代理服务器，我们使用它来处理 HTTP 请求，包括静态文件、动态内容和对后端服务的反向代理。它还可以代理 WebSocket 连接。
 
-> 如果您不熟悉 NGINX 代理，请参考 [Nginx 配置与 Node.js 反向代理](//zh-hans/nginx/nginx-reverse-proxy-nodejs.html)。
+> 如果您不熟悉 NGINX 代理，请参考 [Nginx 配置与 Node.js 反向代理](/zh-hans/nginx/nginx-reverse-proxy-nodejs.html)。
 
 然而，NGINX 也可以用作 TCP 代理服务器，这对于代理非 HTTP 协议如 MySQL、Redis 和其他基于 TCP 的服务非常有用。本文将指导您完成将 NGINX 配置为 TCP 代理的过程。
 
@@ -10,7 +10,7 @@
 
 在开始之前，请确保您具备以下前提条件：
 
-- 安装了 NGINX 的服务器。您可以使用包管理器安装 NGINX 或从[官方网站](https://nginx.org/zh-hans/en/download.html)下载。
+- 安装了 NGINX 的服务器。您可以使用包管理器安装 NGINX 或从[官方网站](https://nginx.org/en/download.html)下载。
 - 对 NGINX 配置文件及如何编辑它们的基本了解。
 - 访问 NGINX 配置文件的权限，通常位于 `/etc/nginx/nginx.conf` 或 `/etc/nginx/conf.d/default.conf`。
 - 您想要代理的 TCP 服务（例如 MySQL、Redis）应该在服务器上运行并可访问。
@@ -205,5 +205,5 @@ stream {
 ## 其他资源
 
 - [NGINX 文档](https://nginx.org/en/docs/)
-- [NGINX Stream 模块](https://nginx.org/zh-hans/en/docs/stream/ngx_stream_core_module.html)
-- [NGINX 负载均衡](https://nginx.org/zh-hans/en/docs/http/load_balancing.html)
+- [NGINX Stream 模块](https://nginx.org/en/docs/stream/ngx_stream_core_module.html)
+- [NGINX 负载均衡](https://nginx.org/en/docs/http/load_balancing.html)

@@ -4,7 +4,7 @@
 
 Copilot (<https://github.com/features/copilot/>) は、コーディングプロセス中にAI学習に基づいたコーディングの提案を行う、Githubが提供するAIコーディング支援ツールです。多くの場合、コメントや関数名だけで十分であり、Copilotが完全なコードを生成してくれます。
 
-詳細については、[How to use Github Copilot and Shortcuts](/en/vscode/copilot-usage-and-shortcut)をご覧ください。
+詳細については、[How to use Github Copilot and Shortcuts](/ja/vscode/copilot-usage-and-shortcut.html)をご覧ください。
 
 Copilot ChatはCopilotに関連しており、Copilotと同じサブスクリプションを共有していますが、同じものではありません。Copilot ChatはVSCodeで使用できるチャットボットです。Copilotとチャットするために使用することができ、Copilotはチャットの内容に基づいてコードの提案を行います。例えば、Copilot Chatに技術的な質問をしたり、コードの作成を支援してもらうためにCopilot Chatに頼むことができます。
 

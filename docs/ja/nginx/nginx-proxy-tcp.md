@@ -2,7 +2,7 @@
 
 NGINXは強力なWebサーバーおよびリバースプロキシサーバーであることはご存知かもしれません。私たちはこれを使用して、静的ファイル、動的コンテンツ、バックエンドサービスへのリバースプロキシングなど、HTTPリクエストを処理します。また、WebSocket接続のプロキシも可能です。
 
-> NGINXプロキシに馴染みがない場合は、[Node.jsリバースプロキシを使用したNginx設定](//ja/nginx/nginx-reverse-proxy-nodejs.html)を参照してください。
+> NGINXプロキシに馴染みがない場合は、[Node.jsリバースプロキシを使用したNginx設定](/ja/nginx/nginx-reverse-proxy-nodejs.html)を参照してください。
 
 しかし、NGINXはTCPプロキシサーバーとしても使用できます。これはMySQL、Redis、その他のTCPベースのサービスなど、非HTTPプロトコルをプロキシする場合に便利です。この記事では、NGINXをTCPプロキシとして設定するプロセスを説明します。
 
@@ -10,7 +10,7 @@ NGINXは強力なWebサーバーおよびリバースプロキシサーバーで
 
 始める前に、以下の前提条件を確認してください：
 
-- NGINXがインストールされたサーバー。パッケージマネージャーを使用してNGINXをインストールするか、[公式ウェブサイト](https://nginx.org/ja/download.html)からダウンロードできます。
+- NGINXがインストールされたサーバー。パッケージマネージャーを使用してNGINXをインストールするか、[公式ウェブサイト](https://nginx.org/en/download.html)からダウンロードできます。
 - NGINXの設定ファイルと編集方法に関する基本的な知識。
 - NGINXの設定ファイルへのアクセス（通常は `/etc/nginx/nginx.conf` または `/etc/nginx/conf.d/default.conf` にあります）。
 - プロキシしたいTCPサービス（例：MySQL、Redis）がサーバー上で実行され、アクセス可能であること。
@@ -204,5 +204,5 @@ NGINXを強力なTCPプロキシサーバーとして使用して、さまざま
 ## 追加リソース
 
 - [NGINXドキュメント](https://nginx.org/en/docs/)
-- [NGINXストリームモジュール](https://nginx.org/ja/docs/stream/ngx_stream_core_module.html)
-- [NGINXロードバランシング](https://nginx.org/ja/docs/http/load_balancing.html)
+- [NGINXストリームモジュール](https://nginx.org/en/docs/stream/ngx_stream_core_module.html)
+- [NGINXロードバランシング](https://nginx.org/en/docs/http/load_balancing.html)

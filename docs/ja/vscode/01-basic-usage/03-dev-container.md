@@ -40,7 +40,7 @@ VS Codeでデブコンテナを使用する前に、以下の前提条件がイ�
 
 デブコンテナはDockerを使用してコンテナ環境を作成および管理します。デブコンテナを使用する前にDockerをインストールする必要があります。
 
-> [Dockerの公式ウェブサイト](https://www.docker.com/products/docker-desktop/)からDocker Desktop（WindowsとmacOS上）またはDocker Engine（Linux上）を選択できます。OrbStackなどのサードパーティのDockerツールを使用することもできます。詳細については[Siliconチップ（M1/M2/M3）Mac上でのDockerの使用](/en/mac/02-dev-environment/how-to-use-docker-on-m1-mac.md)を参照してください。
+> [Dockerの公式ウェブサイト](https://www.docker.com/products/docker-desktop/)からDocker Desktop（WindowsとmacOS上）またはDocker Engine（Linux上）を選択できます。OrbStackなどのサードパーティのDockerツールを使用することもできます。詳細については[Siliconチップ（M1/M2/M3）Mac上でのDockerの使用](/ja/mac/02-dev-environment/how-to-use-docker-on-m1-mac.html)を参照してください。
 
 
 **VS Code**
