@@ -11,24 +11,26 @@ dotenv.config({
 
 const argv = minimist(process.argv.slice(2));
 const overwrite = argv.overwrite || false;
+const langMap = {
+    'en': 'English',
+    'zh-hans': 'Chinese (Simplified)',
+    'zh-hant': 'Chinese (Traditional)',
+    'ja': 'Japanese',
+    'ko': 'Korean',
+    'fr': 'French',
+    'de': 'German',
+    'es': 'Spanish',
+    'it': 'Italian',
+    'ru': 'Russian',
+};
 
 const convertContent = async (content, from, to) => {
-
-    const langMap = {
-        'en': 'English',
-        'zh-hans': 'Chinese (Simplified)',
-        'zh-hant': 'Chinese (Traditional)',
-        'ja': 'Japanese',
-        'ko': 'Korean',
-        'fr': 'French',
-        'de': 'German',
-        'es': 'Spanish',
-        'it': 'Italian',
-        'ru': 'Russian',
-    };
-
     // replace validator lang
     content = content.replace(/lang="(.*?)"/g, 'lang="' + to + '"');
+    // replace lang in links
+    content = content.replace(/\(\/([a-z\-]{2,7}?)\/(.*?)\.(html)\)/g, (match, lang, docName, ext) => {
+        return `(/${to}/${docName}.${ext})`;
+    });
     return translate(langMap[from], langMap[to], content);
 };
 
