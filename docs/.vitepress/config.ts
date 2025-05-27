@@ -11,6 +11,8 @@ interface NavTextTranslations {
     'zh-hant': string;
     ja: string;
     de: string;
+    es: string;
+    fr: string;
 }
 
 interface NavItem {
@@ -35,7 +37,9 @@ const navItems: RootNavItem[] = [
             'zh-hans': 'Tinkink',
             'zh-hant': 'Tinkink',
             ja: 'Tinkink',
-            de: 'Tinkink'
+            de: 'Tinkink',
+            es: 'Tinkink',
+            fr: 'Tinkink'
         },
         link: 'https://tinkink.net',
     },
@@ -45,7 +49,9 @@ const navItems: RootNavItem[] = [
             'zh-hans': '首页',
             'zh-hant': '首頁',
             ja: 'ホーム',
-            de: 'Startseite'
+            de: 'Startseite',
+            es: 'Inicio',
+            fr: 'Accueil'
         },
         link: '/:lang/'
     },
@@ -54,8 +60,10 @@ const navItems: RootNavItem[] = [
             en: 'Dev Tools',
             'zh-hans': '开发工具',
             'zh-hant': '開發工具',
-            ja: '開発ツール',
-            de: 'Entwicklungswerkzeuge'
+            ja: 'ツール',
+            de: 'Dev-Tools',
+            es: 'Herramientas',
+            fr: 'Outils'
         },
         items: [
             {
@@ -64,7 +72,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'Git',
                     'zh-hant': 'Git',
                     ja: 'Git',
-                    de: 'Git'
+                    de: 'Git',
+                    es: 'Git',
+                    fr: 'Git'
                 },
                 link: '/:lang/git/git-using-different-config-in-different-projects.html',
                 activeMatch: '/:lang/git/'
@@ -75,7 +85,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'VSCode',
                     'zh-hant': 'VSCode',
                     ja: 'VSCode',
-                    de: 'VSCode'
+                    de: 'VSCode',
+                    es: 'VSCode',
+                    fr: 'VSCode'
                 },
                 link: '/:lang/vscode/copilot-usage-and-shortcut.html',
                 activeMatch: '/:lang/vscode/'
@@ -87,8 +99,10 @@ const navItems: RootNavItem[] = [
             en: 'Databases',
             'zh-hans': '数据库',
             'zh-hant': '資料庫',
-            ja: 'データベース',
-            de: 'Datenbanken'
+            ja: 'DB',
+            de: 'DB',
+            es: 'BD',
+            fr: 'BDD'
         },
         items: [
             {
@@ -97,7 +111,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'MySQL',
                     'zh-hant': 'MySQL',
                     ja: 'MySQL',
-                    de: 'MySQL'
+                    de: 'MySQL',
+                    es: 'MySQL',
+                    fr: 'MySQL'
                 },
                 link: '/:lang/mysql/most-used-sql-commands.html',
                 activeMatch: '/:lang/mysql/'
@@ -108,7 +124,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'SQLite',
                     'zh-hant': 'SQLite',
                     ja: 'SQLite',
-                    de: 'SQLite'
+                    de: 'SQLite',
+                    es: 'SQLite',
+                    fr: 'SQLite'
                 },
                 link: '/:lang/sqlite/deal-with-date-time-type-in-sqlite.html',
                 activeMatch: '/:lang/sqlite/'
@@ -121,7 +139,9 @@ const navItems: RootNavItem[] = [
             'zh-hans': 'DevOps',
             'zh-hant': 'DevOps',
             ja: 'DevOps',
-            de: 'DevOps'
+            de: 'DevOps',
+            es: 'DevOps',
+            fr: 'DevOps'
         },
         items: [
             {
@@ -130,7 +150,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'Nginx',
                     'zh-hant': 'Nginx',
                     ja: 'Nginx',
-                    de: 'Nginx'
+                    de: 'Nginx',
+                    es: 'Nginx',
+                    fr: 'Nginx'
                 },
                 link: '/:lang/nginx/nginx-https-config.html',
                 activeMatch: '/:lang/nginx/'
@@ -152,8 +174,10 @@ const navItems: RootNavItem[] = [
             en: 'OS & Tools',
             'zh-hans': '系统与工具',
             'zh-hant': '系統與工具',
-            ja: 'オペレーティングシステムとツール',
-            de: 'Betriebssysteme & Werkzeuge'
+            ja: 'OS・ツール',
+            de: 'OS & Tools',
+            es: 'OS y herramientas',
+            fr: 'OS et outils'
         },
         items: [
             {
@@ -162,7 +186,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'Linux',
                     'zh-hant': 'Linux',
                     ja: 'Linux',
-                    de: 'Linux'
+                    de: 'Linux',
+                    es: 'Linux',
+                    fr: 'Linux'
                 },
                 link: '/:lang/linux/',
                 activeMatch: '/:lang/linux/'
@@ -173,7 +199,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': 'Mac',
                     'zh-hant': 'Mac',
                     ja: 'Mac',
-                    de: 'Mac'
+                    de: 'Mac',
+                    es: 'Mac',
+                    fr: 'Mac'
                 },
                 link: '/:lang/mac/how-to-use-docker-on-m1-mac.html',
                 activeMatch: '/:lang/mac/'
@@ -184,7 +212,9 @@ const navItems: RootNavItem[] = [
                     'zh-hans': '媒体',
                     'zh-hant': '媒體',
                     ja: 'メディア',
-                    de: 'Medien'
+                    de: 'Medien',
+                    es: 'Medios',
+                    fr: 'Médias'
                 },
                 link: '/:lang/media/convert-compress-video-via-ffmpeg.html',
                 activeMatch: '/:lang/media/'
@@ -272,7 +302,7 @@ function getNav(lang: string) {
 export default defineConfig({
     locales: {
         en: {
-            label: 'English',
+            label: '🇺🇸 English',
             lang: 'en',
             title: 'Tutorials | Tinkink',
             description: 'Tutorials of common development tools',
@@ -286,7 +316,7 @@ export default defineConfig({
             }
         },
         'zh-hans': {
-            label: '简体中文',
+            label: '🀄 简体中文',
             lang: 'zh-Hans',
             title: '教程 | Tinkink',
             description: '常用开发工具教程',
@@ -300,7 +330,7 @@ export default defineConfig({
             },
         },
         'zh-hant': {
-            label: '繁體中文',
+            label: '🀄 繁體中文',
             lang: 'zh-Hant',
             title: '教程 | Tinkink',
             description: '常用開發工具教程',
@@ -313,8 +343,22 @@ export default defineConfig({
                 },
             },
         },
+        es: {
+            label: '🇪🇸 Spanish',
+            lang: 'es',
+            title: 'Tutoriales | Tinkink',
+            description: 'Tutoriales de herramientas de desarrollo comunes',
+            link: '/es/',
+            themeConfig: {
+                nav: getNav('es'),
+                editLink: {
+                    text: 'Ayuda a mejorar esta página',
+                    pattern: GITHUB + '/edit/master/docs/:path',
+                },
+            },
+        },
         ja: {
-            label: '日本語',
+            label: '🇯🇵 日本語',
             lang: 'ja',
             title: 'チュートリアル | Tinkink',
             description: 'よく使う開発ツールのチュートリアル',
@@ -328,7 +372,7 @@ export default defineConfig({
             }
         },
         de: {
-            label: 'Deutsch',
+            label: '🇩🇪 Deutsch',
             lang: 'de',
             title: 'Tutorials | Tinkink',
             description: 'Tutorials von gängigen Entwicklungstools',
@@ -337,6 +381,20 @@ export default defineConfig({
                 nav: getNav('de'),
                 editLink: {
                     text: 'Helfen Sie, diese Seite zu verbessern',
+                    pattern: GITHUB + '/edit/master/docs/:path',
+                },
+            }
+        },
+        fr: {
+            label: '🇫🇷 Français',
+            lang: 'fr',
+            title: 'Tutoriels | Tinkink',
+            description: 'Tutoriels sur les outils de développement courants',
+            link: '/fr/',
+            themeConfig: {
+                nav: getNav('fr'),
+                editLink: {
+                    text: 'Aidez à améliorer cette page',
                     pattern: GITHUB + '/edit/master/docs/:path',
                 },
             }
@@ -369,7 +427,7 @@ export default defineConfig({
         if (!pageLang || pageLang === 'index.md') return;
         const pageLangReg = new RegExp('^' + pageLang + '/');
 
-        return ['en', 'zh-Hans', 'zh-Hant', 'ja', 'de', 'x-default'].map((lang) => {
+        return ['en', 'zh-Hans', 'zh-Hant', 'ja', 'de', 'es', 'fr', 'x-default'].map((lang) => {
 
             let altPathLang = lang.toLowerCase();
             if (lang === 'x-default') {

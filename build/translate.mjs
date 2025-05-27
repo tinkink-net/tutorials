@@ -68,7 +68,7 @@ const main = async () => {
 };
 
 const translateToAll = async (from) => {
-    for (const to of ['zh-hans', 'zh-hant', 'ja', 'de']) {
+    for (const to of ['zh-hans', 'zh-hant', 'ja', 'de', 'fr', 'es']) {
         await translateToOne(from, to);
     }
 };
