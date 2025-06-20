@@ -18,6 +18,9 @@ const readAllFiles = async (lang, dir) => {
         if ((await fs.stat(fileRealPath)).isDirectory()) {
             ret.push(...await readAllFiles(lang, filePath));
         } else {
+            if (!filePath.endsWith('.md')) {
+                continue; // only process Markdown files
+            }
             ret.push(filePath);
         }
     }
