@@ -218,7 +218,20 @@ const navItems: RootNavItem[] = [
                 },
                 link: '/:lang/media/convert-compress-video-via-ffmpeg.html',
                 activeMatch: '/:lang/media/'
-            }
+            },
+            {
+                text: {
+                    en: 'Misc',
+                    'zh-hans': '其他',
+                    'zh-hant': '其他',
+                    ja: 'その他',
+                    de: 'Sonstiges',
+                    es: 'Varios',
+                    fr: 'Divers'
+                },
+                link: '/:lang/misc/',
+                activeMatch: '/:lang/misc/'
+            },
         ]
     },
     /* {
