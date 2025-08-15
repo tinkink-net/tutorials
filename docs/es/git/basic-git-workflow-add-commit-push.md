@@ -571,8 +571,8 @@ Este flujo de trabajo básico forma la base de todo uso de Git. Ya sea que traba
 Ahora que entiendes el flujo de trabajo básico de Git, estás listo para explorar temas más avanzados:
 
 1. [Entendiendo las Ramas de Git](./understanding-git-branches.md)
-2. [Creando y Cambiando entre Ramas](./creating-and-switching-branches.md)
-3. [Trabajando con Repositorios Remotos](./working-with-remote-repositories.md)
+<!-- 2. [Creando y Cambiando entre Ramas](./creating-and-switching-branches.md) -->
+<!-- 3. [Trabajando con Repositorios Remotos](./working-with-remote-repositories.md) -->
 
 ## Recursos Relacionados
 

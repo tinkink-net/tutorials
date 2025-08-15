@@ -571,8 +571,8 @@ git push                     # 設定されたリモートにプッシュ
 基本的なGitワークフローを理解したので、より高度なトピックを探索する準備ができました：
 
 1. [Gitブランチの理解](./understanding-git-branches.md)
-2. [ブランチの作成と切り替え](./creating-and-switching-branches.md)
-3. [リモートリポジトリの操作](./working-with-remote-repositories.md)
+<!-- 2. [ブランチの作成と切り替え](./creating-and-switching-branches.md) -->
+<!-- 3. [リモートリポジトリの操作](./working-with-remote-repositories.md) -->
 
 ## 関連リソース
 

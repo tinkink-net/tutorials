@@ -571,8 +571,8 @@ This basic workflow forms the foundation of all Git usage. Whether you're workin
 Now that you understand the basic Git workflow, you're ready to explore more advanced topics:
 
 1. [Understanding Git Branches](./understanding-git-branches.md)
-2. [Creating and Switching Branches](./creating-and-switching-branches.md)
-3. [Working with Remote Repositories](./working-with-remote-repositories.md)
+<!-- 2. [Creating and Switching Branches](./creating-and-switching-branches.md) -->
+<!-- 3. [Working with Remote Repositories](./working-with-remote-repositories.md) -->
 
 ## Related Resources
 

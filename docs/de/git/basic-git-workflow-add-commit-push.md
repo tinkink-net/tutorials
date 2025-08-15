@@ -571,8 +571,8 @@ Dieser grundlegende Workflow bildet die Grundlage für jede Git-Nutzung. Ob Sie 
 Nachdem Sie den grundlegenden Git-Workflow verstanden haben, sind Sie bereit, fortgeschrittenere Themen zu erkunden:
 
 1. [Understanding Git Branches](./understanding-git-branches.md)
-2. [Creating and Switching Branches](./creating-and-switching-branches.md)
-3. [Working with Remote Repositories](./working-with-remote-repositories.md)
+<!-- 2. [Creating and Switching Branches](./creating-and-switching-branches.md) -->
+<!-- 3. [Working with Remote Repositories](./working-with-remote-repositories.md) -->
 
 ## Verwandte Ressourcen
 

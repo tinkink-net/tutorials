@@ -571,8 +571,8 @@ git push                     # 推送到已配置的远程仓库
 现在你已经理解了基本的 Git 工作流程，你已准备好探索更高级的主题：
 
 1. [理解 Git 分支](./understanding-git-branches.md)
-2. [创建和切换分支](./creating-and-switching-branches.md)
-3. [使用远程仓库](./working-with-remote-repositories.md)
+<!-- 2. [创建和切换分支](./creating-and-switching-branches.md) -->
+<!-- 3. [使用远程仓库](./working-with-remote-repositories.md) -->
 
 ## 相关资源
 

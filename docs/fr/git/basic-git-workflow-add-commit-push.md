@@ -571,8 +571,8 @@ Ce flux de travail de base constitue le fondement de toute utilisation de Git. Q
 Maintenant que vous comprenez le flux de travail Git de base, vous êtes prêt à explorer des sujets plus avancés :
 
 1. [Comprendre les branches Git](./understanding-git-branches.md)
-2. [Créer et changer de branches](./creating-and-switching-branches.md)
-3. [Travailler avec des dépôts distants](./working-with-remote-repositories.md)
+<!-- 2. [Créer et changer de branches](./creating-and-switching-branches.md) -->
+<!-- 3. [Travailler avec des dépôts distants](./working-with-remote-repositories.md) -->
 
 ## Ressources connexes
 
