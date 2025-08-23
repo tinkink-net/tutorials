@@ -40,7 +40,7 @@ Dev Container 是一种专为开发目的设计的特殊容器类型。它为开
 
 Dev Container 依赖 Docker 创建和管理容器环境。在使用 Dev Container 之前，你需要安装 Docker。
 
-> 你可以从 [Docker 官方网站](https://www.docker.com/products/docker-desktop/) 选择 Docker Desktop（在 Windows 和 macOS 上）或 Docker Engine（在 Linux 上）。你也可以使用第三方 Docker 工具如 OrbStack，详情请参考 [在 Silicon 芯片 (M1/M2/M3) Mac 电脑上使用 Docker](/zh-hans/mac/02-dev-environment/how-to-use-docker-on-m1-mac.html)。
+> 你可以从 [Docker 官方网站](https://www.docker.com/products/docker-desktop/) 选择 Docker Desktop（在 Windows 和 macOS 上）或 Docker Engine（在 Linux 上）。你也可以使用第三方 Docker 工具如 OrbStack，详情请参考 [在 Silicon 芯片 (M1/M2/M3) Mac 电脑上使用 Docker](/zh-hans/mac/how-to-use-docker-on-m1-mac.html)。
 
 **VS Code**
 
