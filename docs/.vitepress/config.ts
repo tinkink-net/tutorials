@@ -41,7 +41,7 @@ const navItems: RootNavItem[] = [
             es: 'Tinkink',
             fr: 'Tinkink'
         },
-        link: 'https://tinkink.net',
+        link: 'https://tink.ink',
     },
     {
         text: {
