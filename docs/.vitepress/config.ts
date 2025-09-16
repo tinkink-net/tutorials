@@ -317,7 +317,7 @@ export default defineConfig({
         en: {
             label: '🇺🇸 English',
             lang: 'en',
-            title: 'DevTuts - Tutorials for Developers',
+            title: 'DevTuts',
             description: 'Tutorials of common development tools',
             link: '/en/',
             themeConfig: {
@@ -331,7 +331,7 @@ export default defineConfig({
         'zh-hans': {
             label: '🀄 简体中文',
             lang: 'zh-Hans',
-            title: 'DevTuts - 开发者教程',
+            title: 'DevTuts',
             description: '常用开发工具教程',
             link: '/zh-hans/',
             themeConfig: {
@@ -345,7 +345,7 @@ export default defineConfig({
         'zh-hant': {
             label: '🀄 繁體中文',
             lang: 'zh-Hant',
-            title: 'DevTuts - 開發者教程',
+            title: 'DevTuts',
             description: '常用開發工具教程',
             link: '/zh-hant/',
             themeConfig: {
@@ -359,7 +359,7 @@ export default defineConfig({
         es: {
             label: '🇪🇸 Spanish',
             lang: 'es',
-            title: 'DevTuts - Tutoriales para Desarrolladores',
+            title: 'DevTuts',
             description: 'Tutoriales de herramientas de desarrollo comunes',
             link: '/es/',
             themeConfig: {
@@ -373,7 +373,7 @@ export default defineConfig({
         ja: {
             label: '🇯🇵 日本語',
             lang: 'ja',
-            title: 'DevTuts - チュートリアル',
+            title: 'DevTuts',
             description: 'よく使う開発ツールのチュートリアル',
             link: '/ja/',
             themeConfig: {
@@ -387,7 +387,7 @@ export default defineConfig({
         de: {
             label: '🇩🇪 Deutsch',
             lang: 'de',
-            title: 'DevTuts - Tutorials für Entwickler',
+            title: 'DevTuts',
             description: 'Tutorials von gängigen Entwicklungstools',
             link: '/de/',
             themeConfig: {
@@ -401,7 +401,7 @@ export default defineConfig({
         fr: {
             label: '🇫🇷 Français',
             lang: 'fr',
-            title: 'DevTuts - Tutoriels pour Développeurs',
+            title: 'DevTuts',
             description: 'Tutoriels sur les outils de développement courants',
             link: '/fr/',
             themeConfig: {
