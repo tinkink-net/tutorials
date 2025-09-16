@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <template #aside-outline-after>
-            <AdSense />
+            <!-- <AdSense /> -->
             <MyAd />
         </template>
     </Layout>

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 import genSidebar from './genSidebar';
 
-const DOMAIN = 'https://tutorials.tinkink.net';
+const DOMAIN = 'https://devtuts.net';
 const GITHUB = 'https://github.com/tinkink-net/tutorials';
 
 // Navigation interfaces
@@ -317,7 +317,7 @@ export default defineConfig({
         en: {
             label: '🇺🇸 English',
             lang: 'en',
-            title: 'Tutorials | Tinkink',
+            title: 'DevTuts - Tutorials for Developers',
             description: 'Tutorials of common development tools',
             link: '/en/',
             themeConfig: {
@@ -331,7 +331,7 @@ export default defineConfig({
         'zh-hans': {
             label: '🀄 简体中文',
             lang: 'zh-Hans',
-            title: '教程 | Tinkink',
+            title: 'DevTuts - 开发者教程',
             description: '常用开发工具教程',
             link: '/zh-hans/',
             themeConfig: {
@@ -345,7 +345,7 @@ export default defineConfig({
         'zh-hant': {
             label: '🀄 繁體中文',
             lang: 'zh-Hant',
-            title: '教程 | Tinkink',
+            title: 'DevTuts - 開發者教程',
             description: '常用開發工具教程',
             link: '/zh-hant/',
             themeConfig: {
@@ -359,7 +359,7 @@ export default defineConfig({
         es: {
             label: '🇪🇸 Spanish',
             lang: 'es',
-            title: 'Tutoriales | Tinkink',
+            title: 'DevTuts - Tutoriales para Desarrolladores',
             description: 'Tutoriales de herramientas de desarrollo comunes',
             link: '/es/',
             themeConfig: {
@@ -373,7 +373,7 @@ export default defineConfig({
         ja: {
             label: '🇯🇵 日本語',
             lang: 'ja',
-            title: 'チュートリアル | Tinkink',
+            title: 'DevTuts - チュートリアル',
             description: 'よく使う開発ツールのチュートリアル',
             link: '/ja/',
             themeConfig: {
@@ -387,7 +387,7 @@ export default defineConfig({
         de: {
             label: '🇩🇪 Deutsch',
             lang: 'de',
-            title: 'Tutorials | Tinkink',
+            title: 'DevTuts - Tutorials für Entwickler',
             description: 'Tutorials von gängigen Entwicklungstools',
             link: '/de/',
             themeConfig: {
@@ -401,7 +401,7 @@ export default defineConfig({
         fr: {
             label: '🇫🇷 Français',
             lang: 'fr',
-            title: 'Tutoriels | Tinkink',
+            title: 'DevTuts - Tutoriels pour Développeurs',
             description: 'Tutoriels sur les outils de développement courants',
             link: '/fr/',
             themeConfig: {
@@ -431,7 +431,7 @@ export default defineConfig({
         socialLinks: [
             { icon: 'github', link: GITHUB },
             { icon: 'twitter', link: 'https://twitter.com/tinkink_net' },
-            { icon: 'discord', link: 'https://discord.gg/pVqVKDae' },
+            { icon: 'discord', link: 'https://discord.gg/D57Xdz3sNg' },
         ]
     },
     transformHead(context) {
