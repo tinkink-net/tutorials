@@ -14,7 +14,7 @@
 | :--- | :--- |
 | [Linux](linux/) | テキストファイルの操作方法、パーミッションの設定、圧縮と解凍、タイマーの設定など、Linuxの基本的なチュートリアルです。 |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | 開発者向けのMacチュートリアルで、Apple SiliconチップのMacbookでDockerをインストールする方法などがあります。 |
-| [Git](git) | 基本コマンド、ブランチ操作、マージなど Git の基本。 |
+| [Git](git/) | 基本コマンド、ブランチ操作、マージなど Git の基本。 |
 | [Mysql](mysql/most-used-sql-commands.html) | 文字セットと照合順序、最もよく使用されるコマンドなど、Mysqlのトピックがあります。 |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | SQLite で日付・時刻型を保存・処理する方法などのトピック。 |
 | [Nginx](nginx/nginx-https-config.html) | Nginxの設定に関するさまざまな「方法」のトピック、逆プロキシ、静的ファイルサーバー、Webソケットプロキシなど。 |

@@ -14,7 +14,7 @@ Nous proposons une collection de tutoriels utiles sur Linux, la programmation, l
 | :--- | :--- |
 | [Linux](linux/) | Tutoriels de base sur Linux, comme comment travailler avec des fichiers texte, les permissions, compresser & décompresser, régler une minuterie, etc. |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | Tutoriels Mac pour développeur, comme comment installer docker sur les MacBook équipés de puces Apple Silicon. |
-| [Git](git) | Notions essentielles de Git : commandes de base, branches et fusion. |
+| [Git](git/) | Notions essentielles de Git : commandes de base, branches et fusion. |
 | [Mysql](mysql/most-used-sql-commands.html) | Sujets Mysql, comme le jeu de caractères et la collation, les commandes les plus utilisées. |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | Sujets SQLite, comme comment stocker et traiter les types de date et d'heure dans SQLite. |
 | [Nginx](nginx/nginx-https-config.html) | Toutes sortes de sujets "comment faire" sur la configuration de nginx, comme le proxy inverse, le serveur de fichiers statiques, le proxy websocket. |

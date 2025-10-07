@@ -13,6 +13,7 @@ git reset --soft <hash>
 git reset --mixed <hash>   # défaut
 git reset --hard <hash>
 ```
+
 | Mode | Effet |
 |------|-------|
 | soft | Déplace HEAD seulement |
@@ -39,14 +40,8 @@ Restaurer fichier :
 git checkout HEAD -- src/app.js
 ```
 
-## Scénarios
-| Objectif | Commande |
-|----------|----------|
-| Retirer dernier commit local | reset --soft HEAD~1 |
-| Annuler commit partagé | revert <hash> |
-| Inspecter état ancien | checkout <hash> |
-
 ## Visual Mental
+
 ```
 reset  → repositionne pointeurs
 revert → ajoute anti-commit

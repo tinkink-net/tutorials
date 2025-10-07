@@ -14,7 +14,7 @@
 | :--- | :--- |
 | [Linux](linux/) | Linux基礎教程，如如何處理文本文件、權限、壓縮和解壓縮、設置定時器等。 |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | 面向開發人員的Mac教程，如如何在蘋果芯片的Macbook上安裝Docker。 |
-| [Git](git) | Git 基礎知識，如基本命令、分支與合併。 |
+| [Git](git/) | Git 基礎知識，如基本命令、分支與合併。 |
 | [Mysql](mysql/most-used-sql-commands.html) | Mysql主題，如字符集和校對規則、最常用的命令。 |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | SQLite 主題，如如何在 SQLite 中存儲與處理日期和時間類型。 |
 | [Nginx](nginx/nginx-https-config.html) | 各種關於Nginx配置的“如何”主題，例如反向代理、靜態文件服務器、WebSocket代理。 |

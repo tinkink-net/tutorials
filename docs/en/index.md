@@ -14,7 +14,7 @@ We provide a collection of useful tutorials on Linux, programming, development, 
 | :--- | :--- |
 | [Linux](linux/) | Linux basic tutorials, such as how to work with text files, permissions, compress & decompress, set timer and so on. |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | Mac tutorials for developer, such as how to install docker on Apple Silicon chips macbook. |
-| [Git](git) | Git essentials, such as basic commands, branching, and merging. |
+| [Git](git/) | Git essentials, such as basic commands, branching, and merging. |
 | [Mysql](mysql/most-used-sql-commands.html) | Mysql topics, such as character set and collate, most used commands. |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | SQLite topics, such as how to store and process date and time types in SQLite. |
 | [Nginx](nginx/nginx-https-config.html) | All kinds of "how to" topic on nginx configuration, such as reverse proxy, static file server, websocker proxy. |
