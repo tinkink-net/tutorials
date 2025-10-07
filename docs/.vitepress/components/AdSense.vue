@@ -23,6 +23,11 @@ const displayAd = async () => {
     showAd.value = true;
     await nextTick();
 
+    if (location.hostname === 'localhost') {
+        // Don't show ads on localhost
+        return;
+    }
+
     if (!window.adsbygoogle) {
         window.adsbygoogle = [];
     }
