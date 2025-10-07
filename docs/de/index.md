@@ -4,12 +4,19 @@ Tutorials sind entscheidend beim Erlernen von Programmiersprachen und Frameworks
 
 Wir bieten eine Sammlung nützlicher Tutorials zu Linux, Programmierung, Entwicklung, KI und verwandten Themen für Entwickler an und werden versuchen, sie auf dem neuesten Stand zu halten.
 
+## Kürzlich aktualisiert
+
+- [Git Tutorials](git/) - Neue Git-Tutorials hinzugefügt, um die Serie vollständiger zu machen.
+
+## Themen
+
 | Thema | Beschreibung |
 | :--- | :--- |
 | [Linux](linux/) | Grundlegende Linux-Tutorials, wie z.B. der Umgang mit Textdateien, Berechtigungen, Komprimieren & Dekomprimieren, Timer einstellen usw. |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | Mac-Tutorials für Entwickler, wie z.B. die Installation von Docker auf MacBooks mit Apple Silicon Chips. |
-| [Git](git/git-using-different-config-in-different-projects.html) | Fortgeschrittene Themen zu Git, wie z.B. die Verwendung unterschiedlicher Konfigurationen in verschiedenen Projekten. |
+| [Git](git) | Git-Grundlagen, wie grundlegende Befehle, Branching und Merging. |
 | [Mysql](mysql/most-used-sql-commands.html) | Mysql-Themen, wie z.B. Zeichensatz und Kollation, am häufigsten verwendete Befehle. |
+| [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | SQLite-Themen, z.B. wie man Datums- und Zeittypen in SQLite speichert und verarbeitet. |
 | [Nginx](nginx/nginx-https-config.html) | Alle Arten von "Wie man" Themen zur Nginx-Konfiguration, wie z.B. Reverse Proxy, statischer Dateiserver, WebSocket-Proxy. |
 | [Vscode](vscode/copilot-usage-and-shortcut.html) | Vscode-bezogene Themen, wie man Github Copilot verwendet, wie man die Zeitleiste verwendet. |
 | [Medien](media/convert-compress-video-via-ffmpeg.html) | Medienbezogene Themen, wie man Video-Dateien konvertiert oder komprimiert. |

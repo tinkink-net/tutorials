@@ -4,11 +4,17 @@ Los tutoriales son vitales cuando se aprenden lenguajes de programación y frame
 
 Proporcionamos una colección de tutoriales útiles sobre Linux, programación, desarrollo, AI y temas relacionados para desarrolladores, e intentaremos mantenerlos actualizados.
 
+## Recientemente actualizado
+
+- [Tutoriales de Git](git/) - Se agregaron tutoriales de Git para hacer la serie más completa.
+
+## Temas
+
 | Tema | Descripción |
 | :--- | :--- |
 | [Linux](linux/) | Tutoriales básicos de Linux, como trabajar con archivos de texto, permisos, comprimir y descomprimir, configurar temporizadores y más. |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | Tutoriales de Mac para desarrolladores, como instalar docker en macbooks con chips Apple Silicon. |
-| [Git](git/git-using-different-config-in-different-projects.html) | Temas avanzados sobre Git, como usar diferentes configuraciones en diferentes proyectos. |
+| [Git](git) | Fundamentos de Git, como comandos básicos, ramificación y fusión. |
 | [Mysql](mysql/most-used-sql-commands.html) | Temas de Mysql, como conjuntos de caracteres y colaciones, comandos más utilizados. |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | Temas de SQLite, como almacenar y procesar tipos de fecha y hora en SQLite. |
 | [Nginx](nginx/nginx-https-config.html) | Todo tipo de temas "cómo hacer" sobre configuración de nginx, como proxy inverso, servidor de archivos estáticos, proxy de websocket. |

@@ -4,11 +4,17 @@ Les tutoriels sont essentiels lors de l'apprentissage des langages de programmat
 
 Nous proposons une collection de tutoriels utiles sur Linux, la programmation, le développement, l'IA et des sujets connexes pour les développeurs, et nous essaierons de les maintenir à jour.
 
+## Récemment mis à jour
+
+- [Tutoriels Git](git/) - Ajout de tutoriels sur Git pour rendre la série plus complète.
+
+## Sujets
+
 | Sujet | Description |
 | :--- | :--- |
 | [Linux](linux/) | Tutoriels de base sur Linux, comme comment travailler avec des fichiers texte, les permissions, compresser & décompresser, régler une minuterie, etc. |
 | [Mac](mac/how-to-use-docker-on-m1-mac.html) | Tutoriels Mac pour développeur, comme comment installer docker sur les MacBook équipés de puces Apple Silicon. |
-| [Git](git/git-using-different-config-in-different-projects.html) | Sujet avancé sur Git, comme comment utiliser différentes configurations dans différents projets. |
+| [Git](git) | Notions essentielles de Git : commandes de base, branches et fusion. |
 | [Mysql](mysql/most-used-sql-commands.html) | Sujets Mysql, comme le jeu de caractères et la collation, les commandes les plus utilisées. |
 | [SQLite](sqlite/deal-with-date-time-type-in-sqlite.html) | Sujets SQLite, comme comment stocker et traiter les types de date et d'heure dans SQLite. |
 | [Nginx](nginx/nginx-https-config.html) | Toutes sortes de sujets "comment faire" sur la configuration de nginx, comme le proxy inverse, le serveur de fichiers statiques, le proxy websocket. |
