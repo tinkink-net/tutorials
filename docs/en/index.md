@@ -27,3 +27,4 @@ If you find any errors or have suggestions for improvements, please submit an is
 
 - [Github](https://github.com/tinkink-net/tutorials)
 - [Twitter](https://twitter.com/tinkink_net)
+- [Discord](https://discord.gg/D57Xdz3sNg)

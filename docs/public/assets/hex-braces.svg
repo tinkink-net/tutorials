@@ -1,0 +1,15 @@
+<svg role="img" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <title>DevTuts Hex Braces Emblem</title>
+  <desc>Hexagon with stylized curly braces to reflect coding tutorials.</desc>
+  <style>
+    :root { --h1:#0ea5e9; --h2:#3b82f6; --brace:#ffffff; }
+  </style>
+  <path d="M70 8 124 40v64L70 136 16 104V40Z" fill="url(#g2)"/>
+  <defs>
+    <linearGradient id="g2" x1="16" y1="8" x2="124" y2="136">
+      <stop stop-color="var(--h1)"/>
+      <stop offset="1" stop-color="var(--h2)"/>
+    </linearGradient>
+  </defs>
+  <path d="M58 46c-6 0-10 4-10 10v4c0 4-2 8-6 10 4 2 6 6 6 10v4c0 6 4 10 10 10M82 46c6 0 10 4 10 10v4c0 4 2 8 6 10-4 2-6 6-6 10v4c0 6-4 10-10 10" fill="none" stroke="var(--brace)" stroke-width="8" stroke-linecap="round"/>
+</svg>
