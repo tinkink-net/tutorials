@@ -420,6 +420,7 @@ export default defineConfig({
         ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3100848271969177', crossorigin: 'anonymous' }],
     ],
     outDir: '../dist',
+    metaChunk: true,
     lastUpdated: true,
     sitemap: {
         hostname: DOMAIN,
